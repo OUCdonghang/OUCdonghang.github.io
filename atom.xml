@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://oucdonghang.github.io/</id>
     <title>这里是董航的！</title>
-    <updated>2020-02-01T01:37:38.043Z</updated>
+    <updated>2020-02-01T07:10:55.211Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://oucdonghang.github.io/"/>
     <link rel="self" href="https://oucdonghang.github.io//atom.xml"/>
@@ -10,6 +10,52 @@
     <logo>https://oucdonghang.github.io//images/avatar.png</logo>
     <icon>https://oucdonghang.github.io//favicon.ico</icon>
     <rights>All rights reserved 2020, 这里是董航的！</rights>
+    <entry>
+        <title type="html"><![CDATA[文章阅读笔记1：Design and Implementation of a GaN-Based, 100-kHz, 102-W/in3Single-Phase Inverter]]></title>
+        <id>https://oucdonghang.github.io//post/wen-zhang-yue-du-bi-ji-design-and-implementation-of-a-gan-based-100-khz-102-win3single-phase-inverter</id>
+        <link href="https://oucdonghang.github.io//post/wen-zhang-yue-du-bi-ji-design-and-implementation-of-a-gan-based-100-khz-102-win3single-phase-inverter">
+        </link>
+        <updated>2020-02-01T01:39:04.000Z</updated>
+        <content type="html"><![CDATA[<p>摘要：<br>
+Inverter 逆变器  直流变交流的设备  整流是把交流变直流<br>
+电力电子器件的很关键的令人满意的特性就是高功率密度 High power density<br>
+高功率密度可以推动工业应用，让工业应用获得更多利润<br>
+这篇文章是针对这个比赛the Google Little Box Challenge设计的一个基于Ga-N材料的逆变器。功率密度可以达到<img src="https://oucdonghang.github.io//post-images/1580521473779.png" alt="">瓦每立方英寸</p>
+<p>1、研究了多种SiC和GaN材料的增强型场效应管的静态和动态温变特性<br>
+<strong>疑问</strong> 什么随着温度变化？电压电流？模电里的？<br>
+2、根据器件测试结果，比较了逆变器级（inverter stage）的几种拓扑结构和不同的功率解耦方案对器件体积、效率和热要求的影响。此外，本文还讨论了磁性器件（magnetic devices）的一些设计方法和GaN器件的栅极驱动器（gate drives for GaN devices）的实现，使系统能够紧凑有效率。<br>
+<strong>疑问</strong> 拓扑结构是啥意思。外围电路？磁性器件是啥  GaN门极驱动器。还有inverter stage和power stage怎么划分的。<img src="https://oucdonghang.github.io//post-images/1580539537833.png" alt=""><br>
+power stage 应该是传递功率的电路部分<br>
+3、设计了一个直流陷波滤波器（a dc notch filter）和一个硬开关全桥变换器（a hard switching full-bridge converter）。<br>
+陷波滤波器指的是一种可以在某一个频率点迅速衰减输入信号，以达到阻碍此频率信号通过的滤波效果。陷波滤波器属于带阻滤波器的一种,只是他的阻带非常狭窄，它的阶数必须是二阶（含二阶）以上。</p>
+<p>第一章 introduction<br>
+WBG  new wideband gap 高频宽的电力设备具有独特的物理特性 让能量转换有更高的开关频率，更高的效率和更高的能量密度<br>
+为了推动这方面发展，谷歌公司举行了一个比赛LBC   Little Box Challenge<br>
+这个表是一些比赛要求<br>
+<img src="https://oucdonghang.github.io//post-images/1580523435103.png" alt=""><br>
+不仅需要电力电子电路设计，还需要系统的热设计，以避免热点的外壳表面和机械设计，以充分利用封闭的体积。<br>
+这篇文章应该是参赛者的参赛文章</p>
+<p>直流链路上的全桥变换器和电解电容器是用于分布式发电(如光伏发电和燃料电池)的千瓦级单相接口的常用解决方案<br>
+<strong>注</strong>:分布式发电（Distributed Generation，DG），通常是指发电功率在几千瓦至数百兆瓦（也有的建议限制在30～50兆瓦以下）的小型模块化、分散式、<strong>布置在用户附近的</strong>高效、可靠的发电单元。功率密度为1 W/cm3 (16.4 W/in3)是下一代光伏组件集成变流器商业化产品的目标.，本文设计的竟然可以在102w/in3</p>
+<p>并网应用中通常采用直流/直流级的高频变压器或网侧的线频变压器，限制了功率密度，降低了效率<br>
+问：为什么会影响效率 变压器的铜耗和铁耗 是因为采用了变压器，变压器自身会有损耗。所以降低了整个的效率<br>
+https://wenwen.sogou.com/z/q773804217.htm<br>
+<strong>注</strong>：光伏发电并网就是太阳能组件产生的直流电经过并网逆变器转换成符合市电电网要求的交流电之后直接接入公共电网。可以分为带蓄电池的和不带蓄电池的并网发电系统。<br>
+https://news.solarbe.com/201712/26/122431.html</p>
+<p>消除了电流隔离的没有变压器的设计已经被用来实现更紧凑的设计。【5-7】和【14】这一些文章详细说明了单项逆变器的拓扑结构、功率解耦方法和泄漏电流抑制方法。<br>
+所以有了本文的设计。</p>
+<p>在逆变器的功率级（power stage），提高开关频率是实现高功率密度的一种常用方法，因为更高的开关频率往往会导致滤波无源器件和储能器件的尺寸减小。然而，在增加功率密度的同时，更高的开关频率也可能降低转换效率（因为同时也增加了开关损耗），需要额外的设计工作来满足效率和温度要求，或者在包括冷却系统的情况下导致功率密度的净下降。</p>
+<p><strong>所以说开关频率不能无限提高，要在有收益的范围内适当提高</strong>。<br>
+Soft switching techniques 软开关技术 能够提高开关频率同时降低开关损耗<br>
+<img src="https://oucdonghang.github.io//post-images/1580539871240.png" alt=""><br>
+但是一样存在缺点，器件开关损耗的降低可能会导致无源器件上的器件导通损耗和交流损耗的增加，并且当考虑固定带宽的特定标准时，器件开关损耗与电磁干扰(EMI)滤波器的尺寸之间存在非单调关系。</p>
+<p>在dc-ac和ac-dc系统中，对某些储能元件的要求来自于线路频率而不是开关频率，因此增加开关频率不会带来明显的好处。<br>
+在直流输入端的大容量电容能量存储能够为解耦直流和交流部分提供了必要的能量<br>
+有源滤波器采用额外的电力电子设备来充分利用无源元件的可用能量存储，从而降低了体积。然而，有源滤波器的效率低于直流电容器，因此降低了系统的效率，产生更多的热量。<br>
+<img src="https://oucdonghang.github.io//post-images/1580540895605.png" alt=""><br>
+本文设计并实验验证了一种2-kVA单相硬开关全桥逆变器，该逆变器采用了GaN系统的顶冷增强模态GaN器件和谐振直流滤波器，功率密度为102 W/in3。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[英语六级：11-5 ]]></title>
         <id>https://oucdonghang.github.io//post/ying-yu-liu-ji-11-5</id>
