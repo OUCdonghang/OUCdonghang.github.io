@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://oucdonghang.github.io/</id>
     <title>这里是董航的！</title>
-    <updated>2020-02-01T09:14:08.205Z</updated>
+    <updated>2020-02-02T08:43:25.481Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://oucdonghang.github.io/"/>
     <link rel="self" href="https://oucdonghang.github.io//atom.xml"/>
@@ -10,6 +10,74 @@
     <logo>https://oucdonghang.github.io//images/avatar.png</logo>
     <icon>https://oucdonghang.github.io//favicon.ico</icon>
     <rights>All rights reserved 2020, 这里是董航的！</rights>
+    <entry>
+        <title type="html"><![CDATA[文章阅读笔记2：Design and Implementation of a GaN-Based, 100-kHz, 102-W/in3Single-Phase Inverter]]></title>
+        <id>https://oucdonghang.github.io//post/wen-zhang-yue-du-bi-ji-3design-and-implementation-of-a-gan-based-100-khz-102-win3single-phase-inverter</id>
+        <link href="https://oucdonghang.github.io//post/wen-zhang-yue-du-bi-ji-3design-and-implementation-of-a-gan-based-100-khz-102-win3single-phase-inverter">
+        </link>
+        <updated>2020-02-02T06:44:16.000Z</updated>
+        <content type="html"><![CDATA[<p>对于恒频率的CCM操作，总损耗（开关损耗+传导损耗）是在全功率情况下的一个线路周期的平均值，和开关频率呈线性关系。图5和图6给出了几种候选设计的体积分解，其中EMI滤波器同时涉及共模(CM)和差模(DM)滤波器。<br>
+由于纹波很小，无源元件产生的功率损耗很小，因此对散热器的体积贡献很小。（意思应该就是无源元件不需要多余的散热器件，所以不会额外增加体积）<br>
+当开关频率从100 kHz增加到500 kHz时，额外的开关损耗会导致散热器体积的增加，从而抵消电感体积的减少。<br>
+<img src="https://oucdonghang.github.io//post-images/1580626608205.png" alt=""><br>
+Passive Related Heatsink：被动相关散热片<br>
+Device Related Heatsink：设备相关散热片<br>
+Inductor：电感<br>
+Capacitor：电容<br>
+EMI：电磁干扰</p>
+<p>在CRM中，尽管在考虑的频率范围内增加了均方根电流(rms)，但软交换操作可以降低设备损耗。然而，增加的核心和铜损耗电感导致整体散热器的体积增加。请注意，CRM操作中的频率是指其在不同范围内的最小频率，其上限分别为900 kHz、1.2 MHz和1.5 MHz。</p>
+<p>图7给出了CEC效率随着功率增加的曲线。包括半导体和电感损耗，并对剩余损耗机制进行了额外的经验估计。一般而言，CCM的功率级控制简单，辅助电路少，效率高<br>
+虽然CRM可能是高功率密度的一个很好的候选。但是电感器的设计和优化，增加控制和传感电路这件事的复杂性，可变开关频率，以及在轻负载下的改进，这些都被认为是繁重的工作，对短时间内的小盒竞争没有足够的好处。所以选用了这个GaN的H桥来作为参赛方案。<br>
+（意思就是这个方案可能是一个很好的有潜力的方案，但是对于参加这个比赛来说，需要做的工作太多了，对于迫切参加这个比赛来说不太适合）</p>
+<p>EMI滤波器相关知识：http://www.elecfans.com/d/691500.html<br>
+CM：差模 DM：共模<br>
+在CCM中，尽管双极调制比单极调制具有更低的漏电流和CM噪声，但DM滤波器的尺寸比CM滤波器大。因此，CM滤波器尺寸的任何减少都会导致DM滤波器尺寸的增加，以适应更高的差分开关纹波。双极调制具有更高的开关损耗，导致更大的热管理系统。因此，选择<strong>单极连续调制与较大的CM滤波器</strong>，以适应泄漏电流和CM噪声限制。<br>
+在进一步的设计迭代中，分析了整个范围的开关频率，团队选择100 kHz作为体积、效率、热性能和EMI产生之间的良好平衡的频率。</p>
+<p>100KHz，单极连续调制和CM滤波器。<br>
+这个选择是特别为了Tennessee大学队伍不应该认为是一个通用方案。随着电感器设计和散热器性能的进一步改进，软开关方案可能会在本设计中超越CCM调制</p>
+<p><strong>C part</strong>  改进的设备损耗模型<br>
+前一节根据室温下DPT测量结果分析了传导损耗和开关损耗。利用最小的散热片来提高功率密度，设备的温度将显著提高。对于氮化镓器件，温度升高将同时改变Rds(ON)和开关特性，如下图所示。测试数据和手册数据进行了对比，在高温下，测量的传导损耗略大于数据表中列出的标称值。<br>
+<img src="https://oucdonghang.github.io//post-images/1580628484070.png" alt=""></p>
+<p>单个GaN器件的导通损耗计算为<br>
+<img src="https://oucdonghang.github.io//post-images/1580628739006.png" alt=""><br>
+其中Irm可以通过仿真得到，Rds(ON)由栅电压和工作温度决定。在不同温度下对GaN器件进行了测试，得到了通电能量损耗与结温之间的关系。<br>
+DPTs实验显示，eono值会随着结温的升高而升高，当逆变器满负荷运行时，至少会增加15%的eono相关开关损耗。然而，EOFF要小得多，不会导致温度损失的显著变化。所以当温度升高时图二的Eoff的曲线仍然有效。<br>
+<img src="https://oucdonghang.github.io//post-images/1580629077158.png" alt=""></p>
+<p>平均开关损耗为：<img src="https://oucdonghang.github.io//post-images/1580629235131.png" alt=""><br>
+Ts是线路周期fsw是开关频率。eon和EOFFare是按实验确定的温度系数进行比例变换的基于测量的操作点。</p>
+<p>第三个附加损耗是所选器件的反向导通损耗，它决定了器件在开关死区时间内的导通损耗。反向导通电压降与温度的关系如图10所示，并有温度变化曲线。这种特性将导致更多的损失，并在细化的损失模型中被考虑<br>
+<img src="https://oucdonghang.github.io//post-images/1580629479579.png" alt=""><br>
+反向传导损耗由：<img src="https://oucdonghang.github.io//post-images/1580629510505.png" alt=""><br>
+tdt是指交换的死区时间<br>
+与前一节使用的简化损耗模型相比，传导损耗可增加60%。在满载时，当设备温度升至100℃时，开关损耗增加15%-20%。在这个改进的模型中，2千瓦CCM h桥结构的额外反向传导损耗也贡献了3w。此改进的损失模型的主要目标包括以下内容：<br>
+1、为热有限元分析(FEA)仿真提供准确的损耗模型，避免外壳上的热点<br>
+2、获得所需散热器的实际体积，并评估和选择CCM操作的适当开关频率<br>
+3、留出足够的设计余量，以避免设备超出其温度限制。</p>
+<p>本节就是更加精细的分析了损耗模型。因为上一节的模型太过简易，很多细节没有考虑，所以在这详细分析，以便于为后面的工作提供帮助。</p>
+<p><strong>第三章：功率解耦。</strong><br>
+<strong>Apart</strong> 无源解耦<br>
+单相逆变器的应用要求功率解耦，因为单相电路的瞬时输出功率是时变的。功率解耦可以是有源的，也可以是无源的。无源解耦是利用滤波来消除纹波，而有源解耦则是使用最少的无源器件的电力电子系统来达到解耦的要求。电源解耦需求将根据应用程序的不同而有所不同。例如，照明应用程序有一个纹波需求，它与灯中可容忍的100或120赫兹闪烁量有关。而PV应用程序通常指定与开始影响最大功率点跟踪(MPPT)的纹波量相关的纹波需求。<br>
+纹波要求公式（适用于25%-100%的满载和Ipeak-Peak&lt;250mA）<br>
+<img src="https://oucdonghang.github.io//post-images/1580630347041.png" alt=""><br>
+对于PV应用，Kjaer等人的[30]表明，峰值电压纹波需要低于MPPT电压的8.5%才能达到98%的利用率.因此，本设计的电压纹波要求完全满足光伏应用的要求。</p>
+<p>无源解耦最常用的方法是使用大容量直流链路电容器。仅使用电容器，满足(4)和(5)所需的电容量可近似为<br>
+<img src="https://oucdonghang.github.io//post-images/1580630591935.png" alt=""><br>
+线性负载条件下|Zin|=Rin=10Ω。pf是从逆变器输出端看到的功率因数。f是基础频率（60Hz） △I是在双频时，电流纹波的峰值百分比在这里是0.1  忽略直流环节电容的等效串联电阻(ESR) 如果分析中包含了电容器的ESR，则所需的直流链路电容为<br>
+<img src="https://oucdonghang.github.io//post-images/1580631169209.png" alt=""><br>
+电解电容,这是最常见的电容器类型用于单相解耦,电容器的时间常数与ESR的电容器,电容范围或50 - 150μs。这个时间常数表明，在实际应用中，在对电容器进行双线频率衰减时，ESR可以忽略不计。(7)与(8)的差值约为2%，在120hz下的耗散系数为0.2。需要注意的是(7)和(8)只使用纹波电流来确定直流链路电容，因为纹波电流和电压之间的关系是由(近)理想电压源和10Ω输入电阻建立的。满足电流纹波要求可以确保满足电压纹波要求，但反之则不行。</p>
+<p>pf应该是逆变器输出端的功率因数，其中包括电磁干扰滤波器的影响。EMI滤波器的X电容将进一步降低超前负载条件下的功率因数，增加直流链路所需的电容量以满足纹波要求。满足在0.7-1领先功率因数负载下的纹波要求，图11显示了使用2-kVA变换器基座时，在100%和20%负载水平下，EMI X电容的直流母线电容与变化百分比。</p>
+<p>应该指出的是，变压器可以连接之间的输出逆变器和负载，如在LBC。这将稍微降低图11所示的要求，因为变压器的磁化电流是滞后的。另外，在假设高功率密度设计时，电感较小的情况下，忽略了电磁干扰滤波器差分电感的影响。<br>
+<img src="https://oucdonghang.github.io//post-images/1580631778802.png" alt=""><br>
+图11中的第一点对应无X电容，逆变器端子外的功率因数与负载的功率因数相同。从图中可以看出，在低功率因数下，X电容的大小对轻载条件下的直流纹波有很大的影响，在设计直流滤波器时需要考虑</p>
+<p><strong>Bpart</strong> 无源共振解耦<br>
+假设独立逆变器在线性负载下运行，在输入端口出现的唯一低频纹波是双频(120hz)项。在这种情况下，对双频项进行滤波的一种更有效的方法是使用调谐到120hz的谐振陷波滤波器，如图12所示。陷波滤波允许非常高的衰减在谐振频率和方便实现与减少电容器的大小。<br>
+该滤波技术也适用于电网频率处输出电流调节带宽高、谐波导致逆变器输入端口接近理想状态的电网应用120 - hz电流源，特别是比例+谐振控制器用于电网频率或重复控制的谐波时。这种方法的效用是有限的，在应用多谐波存在于未经过滤的输入电流，例如，当非线性负载存在。<br>
+假设在理想的谐振条件下，电感的核心损耗相对于绕组损耗较小，陷波滤波器的衰减成为电容的ESR、电感绕组电阻和源阻抗的函数。对于LBC，输入阻抗非常大，因此使用这种方法可以实现高衰减。图13为不同电平下陷波滤波器支路的等效阻抗<br>
+满足(4)和(5)中纹波要求的X个电容器。<br>
+在假设所有的120赫兹纹波都流入直流滤波器的情况下，可以计算出直流滤波器的最坏情况纹波电流。<br>
+<img src="https://oucdonghang.github.io//post-images/1580632652459.png" alt=""></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[文章阅读笔记1：Design and Implementation of a GaN-Based, 100-kHz, 102-W/in3Single-Phase Inverter]]></title>
         <id>https://oucdonghang.github.io//post/wen-zhang-yue-du-bi-ji-design-and-implementation-of-a-gan-based-100-khz-102-win3single-phase-inverter</id>
