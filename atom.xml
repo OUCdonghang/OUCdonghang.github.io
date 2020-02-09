@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://oucdonghang.github.io/</id>
     <title>这里是董航的！</title>
-    <updated>2020-02-02T12:34:31.978Z</updated>
+    <updated>2020-02-09T04:08:50.959Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://oucdonghang.github.io/"/>
     <link rel="self" href="https://oucdonghang.github.io//atom.xml"/>
@@ -10,6 +10,66 @@
     <logo>https://oucdonghang.github.io//images/avatar.png</logo>
     <icon>https://oucdonghang.github.io//favicon.ico</icon>
     <rights>All rights reserved 2020, 这里是董航的！</rights>
+    <entry>
+        <title type="html"><![CDATA[文章阅读笔记3：Design and Implementation of a GaN-Based, 100-kHz, 102-W/in3Single-Phase Inverter]]></title>
+        <id>https://oucdonghang.github.io//post/wen-zhang-yue-du-bi-ji-3 design-and-implementation-of-a-gan-based-100-khz-102-win3single-phase-inverter</id>
+        <link href="https://oucdonghang.github.io//post/wen-zhang-yue-du-bi-ji-3 design-and-implementation-of-a-gan-based-100-khz-102-win3single-phase-inverter">
+        </link>
+        <updated>2020-02-09T01:32:02.000Z</updated>
+        <content type="html"><![CDATA[<p><strong>C part有源解耦</strong><br>
+已有研究对单相逆变器的脉冲功率解耦方法进行了研究，提出了多种减小体积、延长使用寿命的有源电力滤波器。在本节中，我们将选择的有功功率去耦方法与本文所采用的直流陷波滤波器进行比较，包括体积、效率和热性能<br>
+通过控制储能元件上的电压摆幅大于直流母线上的电压摆幅，可以在较小的无源元件尺寸下实现功率解耦。一般来说，薄膜电容器的使用寿命比传统的电解电容器长。单位功率因数下储能所需的直流偏置容抗：<br>
+<img src="https://oucdonghang.github.io//post-images/1581213771678.png" alt=""><br>
+交流有源滤波器使用位于交流侧的储能无源器件，并通过附加相位支路或改进的调制方案实现功率解耦。在该方案中，将额外的双线频单元调制成循环无功功率、脉动交流侧功率、恒直流侧功率平衡的控制策略，以减少直流侧的储能。</p>
+<p>特别地，还考虑了基于差动降压和升压逆变器的交流功率降压的波形控制方法。由于没有额外的元素还没有包括在逆变器阶段是必需的。储能元件是两个用于滤波的交流侧电容器。输出电容上的CM电压波动用于储能，而差动输出被调节来供给负载。电容仍然可以通过10算得</p>
+<p>所选无源和有功功率解耦方法的体积比较如图15所示。<br>
+<img src="https://oucdonghang.github.io//post-images/1581213808728.png" alt=""><br>
+注意，图15中的散热器体积仅由脉冲功率处理造成的额外器件损耗决定。它不包括之前提到的逆变器阶段的器件损耗。主动解决方案采用各种TDK MKP薄膜电容器。如图15所示，直流侧buck/boost有源滤波器的大小与直流陷波滤波器的设计相似。然而，分析计算表明，该有源滤波器在满载时的损耗几乎是陷波滤波器的两倍。</p>
+<p>对于有源滤波方案，进一步减小整体体积的一种方法是将膜电容器替换为多个并联的陶瓷电容器，如图15所示。一般来说，如果只考虑电容和额定电压，电解电容器比陶瓷电容器的能量密度大。然而，纹波电流额定值是这一应用的一个重要因素，这一应用使陶瓷获得可比较性或更好的总体积</p>
+<p>一项商业调查显示，这两家公司的产品质量都很好。来自TDK的Cap CKG系列为这种应用提供了最高的陶瓷电容器能量密度。为了更好地了解这些电容器在有源滤波器溶液中的表现，我们测量了不同偏置条件下的ESR。<br>
+<img src="https://oucdonghang.github.io//post-images/1581214474166.png" alt=""><br>
+表4的结果表明，在直流偏压下，陶瓷电容器的ESR值较高。除了损耗外，非线性电容-电压特性也增加了控制复杂性和满足纹波要求所需的电容器数量<br>
+这两种ac端解耦方法的体积都比直流陷波滤波器大得多。虽然每一个都可以实现与小电容，增加的电压和/或电流应力的电容器的设计导致较低的能量密度的商业部分。此外，功率级在处理ac侧解耦电流时所产生的额外损耗会导致更大的散热器体积，特别是在升压型差动逆变器中。<br>
+因此，该单相逆变器采用直流陷波滤波器设计，具有效率高、功率密度大、实现简单等优点。</p>
+<p><strong>第四章 交流输出滤波</strong><br>
+对于许多应用，逆变器必须满足联邦通信委员会(FCC)第15b部分的传导和辐射排放，这是LBC的要求。除了电磁合规性外，由于安全考虑，逆变器的泄漏电流是有限的。以100千赫的开关频率和单极连续调制，输出开关纹波是在50千赫的规格以外的挑战。但是，由于对异常行为的规定，在设计泄漏要求时加入了开关纹波。图16为所使用的EMI滤波器拓扑结构，其中ld1为连接到全桥逆变器的功率电感器。</p>
+<p><strong>Apart 泄漏电流</strong><br>
+对于正弦单极调制，开关纹波是很容易理解的，并且CM和DM谱都有闭型解析解。利用这些表达式或计算机模拟，可以将CM滤波器的设计限制在要求的泄漏电流范围内。对于图16中的滤波器拓扑结构，泄漏电流将主要由第一个CM回路的设计决定。<br>
+<img src="https://oucdonghang.github.io//post-images/1581215342191.png" alt=""><br>
+使用CM噪声如图17所示，可以计算出第一级CM电感，保证泄漏在50 ma范围内。<br>
+因为大部分的泄漏是在开关频率，简单的近似是使用光谱的第一部分来测量第一阶CM电感的大小，如图17中红色部分所示<br>
+<img src="https://oucdonghang.github.io//post-images/1581215451399.png" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1581215460280.png" alt=""><br>
+(11)中的所有电压和电流都是均方根值。利用(11)和图17第一段的谐波谱<br>
+CM电感应大于3.8 mH，以限制rms泄漏电流为50 mA，开关频率为100 khz。一旦根据需要的电感量选择了电感铁芯，分析就可以扩展到电感随频率、电流和温度的变化，以确保在更大的频率范围内正常工作。</p>
+<p>两个T600006-L2020-450纳米晶芯使用了15匝真空电感器是第一级CM电感器串联。CM电感串联放置，以限制第一级CM电感的核心损耗。从LCR测量仪测量其中一个CM电感的电感随频率的变化如图18所示。100千赫时的电感为2.25 mH，在100千赫时，第一级EMI滤波器的总电感为4.5 mH，超过3.8 mH的要求。<br>
+<img src="https://oucdonghang.github.io//post-images/1581215948219.png" alt=""><br>
+图19为高带宽电流变换器在全功率因数负载和额定条件下测量泄漏电流的实验峰值幅值。结果与分析假设吻合较好，表明峰值泄漏电流的均方根值小于峰值泄漏电流的均方根值50-mA要求。<br>
+<img src="https://oucdonghang.github.io//post-images/1581215958804.png" alt=""><br>
+对于EMI，图17中CM频谱的第一个感兴趣的区域大约是300 kHz，因为第一个100 kHz的区域低于FCC标准的下限。如图18所示，CM电感在10khz以上开始滚动，300khz时的电感几乎是100khz时的一半。在最终设计中，由于电磁干扰的原因，在300 kHz时需要更多的电感，所以增加了第一级的电感，这进而降低峰值泄漏电流甚至比图19所示的更大。<br>
+<strong>B part 微分滤波电感器</strong><br>
+为了实现第一级ld1功率电感器，采用了耦合差动电感器设计。采用一组PQ 26/25铁氧体磁芯和一个i型磁芯集成两个分相电感，如图20所示。<br>
+<img src="https://oucdonghang.github.io//post-images/1581216126878.png" alt=""><br>
+通过保持每个节段的绕组方向相同，可以消除低频磁通，从而与两个离散电感相比减少了所需的核心面积。此外，通过将气隙从绕组中心移开，可以减少由于气隙边缘产生的额外涡流损耗，而不需要减少填充系数或自定义几何核心。</p>
+<p>第五章 优化和实现</p>
+<p>A part  驱动电路设计<br>
+与Si器件相比，WBG器件的一个显著特点是高di/dt和dv/dt，这是由于快速的转换转换造成的。高的di/dt可能会导致过电压故障和由于较差的CM瞬态免疫(CMTI)导致的驱动不当行为。这种影响可以通过减少驱动和功率回路电感和选择高CMTI门驱动器来在一定程度上得到缓解。另一方面，高的dv/dt会在寄生Cgd电容中产生大电流，有可能导致相腿的交叉传导。一般来说，解决这个问题的方法是减慢开关转换速度，使用驱动器和功率场效应晶体管之间的串联电阻，或者通过PCB布局降低栅极环路阻抗，驱动选择或附加分流门到源的电容。图21和图22显示了两个被动解，附加的cgs和不同的开关门电阻。<br>
+在这两种栅极驱动器设计中，Vgs_ONis为7v, Vgs_OFF为0v，对于这种以功率密度为导向的应用，不采用负驱动电压，主要是因为需要额外的产生负电压的电路，需要更多的空间。<br>
+<img src="https://oucdonghang.github.io//post-images/1581217765267.png" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1581217776108.png" alt=""><br>
+在没有外部反并联二极管的情况下，由于负的vgs_off而增加的自交换反向导通损耗和在转换过渡过程中由于串扰而增加的对假开关的亲和性之间会存在设计上的权衡。由于交叉通话，几种驱动配置进行了实验研究，以确定原型的能力，以承受全电压硬开关而不增加损失。<br>
+<img src="https://oucdonghang.github.io//post-images/1581217784611.png" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1581217798231.png" alt=""><br>
+首先测试图21的附加Cgssolution。一个无载相腿配置是用来评估大小的交叉传导损失。在不需要输出电流的情况下，高、低侧GaN器件在100khz时互补切换，时间为111 ns。cgs1是变化的，由此产生的损失被检查。cgs1与相腿空载开关损耗的关系如图23所示。<br>
+理想情况下，损耗应该收敛到一个由设备的Eoss决定的曲线，当足够的Cgsis被加入以防止交叉传导。从图23可以看出，直到Cgs1= 2.2 n F时，这才会发生、</p>
+<p>额外的Cgs解决方案的优点在于，它没有在驱动回路中引入任何额外的串联元件，从而使其面积最小化。但是，这种方法会单方面降低开关速度，增加负载下的开关损耗。采用图22中所示的ing系列电阻可以降低接通速度，同时减小对关闭的影响。空载开关损耗再次以Rg2= 10 Ω和断开电阻Rg1 = 1 Ω串联一个肖特基二极管来评估。</p>
+<p>图24对比了两种串扰缓解方法的开关损耗曲线，结果表明，虽然电阻法在负载下的开关损耗更低，但如果栅环电感仍然能够有效地减小，那么这两种方法的性能是相似的。在最后的原型中，使用了一个分离的开关驱动环路结构来抑制串扰问题并减少开关损耗。</p>
+<p>特别是对于低电容GaN器件，PCB布局也会影响电容损耗。同样在图24中，两种不同的PCB布局在相同的栅极驱动配置下的损耗差异也显示出来了。当设备下方有一个大的接地面时，额外的寄生布局电容会导致额外的开关损耗。在原型的后续修改中，消除了设备下的接地面，并使用了不同的开关门电阻方法。</p>
+<p>为GaN器件选择栅驱动电路的一个关键指标是高CM暂态抗扰度。在原型设计阶段，有两个候选方案，分别是采用单片变压器式磁隔离的ADUM7223和采用单片变压器式磁隔离的ADUM7223，带有射频载波隔离的Si823X已经上市。</p>
+<p>遗憾的是，根据实验测试结果，这两种门驱动电路都不能满足CMTI &gt; 150 V/ns。尽管如此，门驱动器IC, ADUM7223，在最终的原型中被采用，并且没有CMTI引起的失败在测试台上。<br>
+最新的栅极驱动芯片Si827X，实现了CMTI &gt; 200 V/ns，从2016年初就可以使用。这种新型的栅极驱动器与前面提到的栅极驱动器相比，具有更高的CMTI，更适合WBG应用</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[文章阅读笔记2：Design and Implementation of a GaN-Based, 100-kHz, 102-W/in3Single-Phase Inverter]]></title>
         <id>https://oucdonghang.github.io//post/wen-zhang-yue-du-bi-ji-3design-and-implementation-of-a-gan-based-100-khz-102-win3single-phase-inverter</id>
