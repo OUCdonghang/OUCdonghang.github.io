@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://oucdonghang.github.io//favicon.ico?v=1581320949282">
+<link rel="shortcut icon" href="https://oucdonghang.github.io//favicon.ico?v=1581325126850">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://oucdonghang.github.io//styles/main.css">
 
@@ -36,7 +36,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://oucdonghang.github.io/">
-        <img src="https://oucdonghang.github.io//images/avatar.png?v=1581320949282" class="site-logo">
+        <img src="https://oucdonghang.github.io//images/avatar.png?v=1581325126850" class="site-logo">
         <h1 class="site-title">这里是董航的！</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -103,6 +103,8 @@
             
             <div class="post-content">
               <p>对于恒频率的CCM操作，总损耗（开关损耗+传导损耗）是在全功率情况下的一个线路周期的平均值，和开关频率呈线性关系。图5和图6给出了几种候选设计的体积分解，其中EMI滤波器同时涉及共模(CM)和差模(DM)滤波器。<br>
+<img src="https://oucdonghang.github.io//post-images/1581322256878.png" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1581322242895.png" alt=""><br>
 由于纹波很小，无源元件产生的功率损耗很小，因此对散热器的体积贡献很小。（意思应该就是无源元件不需要多余的散热器件，所以不会额外增加体积）<br>
 当开关频率从100 kHz增加到500 kHz时，额外的开关损耗会导致散热器体积的增加，从而抵消电感体积的减少。<br>
 <img src="https://oucdonghang.github.io//post-images/1580626608205.png" alt=""><br>
@@ -116,7 +118,7 @@ EMI：电磁干扰</p>
 虽然CRM可能是高功率密度的一个很好的候选。但是电感器的设计和优化，增加控制和传感电路这件事的复杂性，可变开关频率，以及在轻负载下的改进，这些都被认为是繁重的工作，对短时间内的小盒竞争没有足够的好处。所以选用了这个GaN的H桥来作为参赛方案。<br>
 （意思就是这个方案可能是一个很好的有潜力的方案，但是对于参加这个比赛来说，需要做的工作太多了，对于迫切参加这个比赛来说不太适合）</p>
 <p>EMI滤波器相关知识：http://www.elecfans.com/d/691500.html<br>
-CM：差模 DM：共模<br>
+CM：共模 DM：差模<br>
 在CCM中，尽管双极调制比单极调制具有更低的漏电流和CM噪声，但DM滤波器的尺寸比CM滤波器大。因此，CM滤波器尺寸的任何减少都会导致DM滤波器尺寸的增加，以适应更高的差分开关纹波。双极调制具有更高的开关损耗，导致更大的热管理系统。因此，选择<strong>单极连续调制与较大的CM滤波器</strong>，以适应泄漏电流和CM噪声限制。<br>
 在进一步的设计迭代中，分析了整个范围的开关频率，团队选择100 kHz作为体积、效率、热性能和EMI产生之间的良好平衡的频率。</p>
 <p>100KHz，单极连续调制和CM滤波器。<br>
