@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://oucdonghang.github.io//favicon.ico?v=1581223315483">
+<link rel="shortcut icon" href="https://oucdonghang.github.io//favicon.ico?v=1581320949282">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://oucdonghang.github.io//styles/main.css">
 
@@ -36,7 +36,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://oucdonghang.github.io/">
-        <img src="https://oucdonghang.github.io//images/avatar.png?v=1581223315483" class="site-logo">
+        <img src="https://oucdonghang.github.io//images/avatar.png?v=1581320949282" class="site-logo">
         <h1 class="site-title">这里是董航的！</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -150,10 +150,13 @@ Soft switching techniques 软开关技术 能够提高开关频率同时降低�
 这个结果可以直接用于硬开关操作的开关损耗估计<br>
 switching loss 开关损耗<br>
 Load current 负载电流<br>
+<img src="https://oucdonghang.github.io//post-images/1581318464183.png" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1581318932246.png" alt=""><br>
 三个器件的比较在表二<br>
 <img src="https://oucdonghang.github.io//post-images/1580542668644.png" alt=""><br>
-软开关Eoss从Coss的数据表中算出并减去Eoff，用剩下的来评估开关损耗。</p>
-<p><strong>封装</strong><br>
+软开关Eoss从Coss的数据表中算出并减去Eoff，用剩下的来评估开关损耗。<br>
+http://m.elecfans.com/article/958830.html<br>
+<strong>封装</strong><br>
 另一个需要考虑的因素是可用的器件封装，对开关和热性能有影响。尤其是<br>
 高功率密度原型中的快速开关器件。<br>
 尽管TO-220和TO-247两个封装简化了热设计，但附加的寄生现象可能导致开关损耗增加500%<br>
@@ -179,6 +182,7 @@ THD：谐波失真是指输出信号比输入信号多出的谐波成分,谐波�
 注：注意补充CCM和CRM</p>
 <p>由于CRM操作中存在的高峰值电流，在CRM调制中也考虑了并行同步或交错相位支路interleaved phase legs。</p>
 <p><img src="https://oucdonghang.github.io//post-images/1580546450162.png" alt=""><br>
+https://blog.csdn.net/zhy295006359/article/details/79054258<br>
 CCM硬开关h桥逆变器的原理图如图4a所示。在固定频率的情况下，两个相位的分支会发生相位转换，滤波器看到的等效输出频率使器件的开关频率加倍。该单相SPWM方案被选为硬开关逆变器的比较方案</p>
 <p>CRM是图4b，工作时有180°的相移，以不同的频率切换实现软切换。第三相支路在线路频率上是互补的。<br>
 与高频相位支路相比，该相位支路的器件损耗相对较小，因此，控制器件损耗的高频开关器件数目与对应的CCM相同<br>
