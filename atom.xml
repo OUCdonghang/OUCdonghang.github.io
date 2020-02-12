@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://oucdonghang.github.io/</id>
     <title>这里是董航的！</title>
-    <updated>2020-02-10T09:20:15.945Z</updated>
+    <updated>2020-02-12T08:32:27.414Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://oucdonghang.github.io/"/>
     <link rel="self" href="https://oucdonghang.github.io//atom.xml"/>
@@ -10,6 +10,17 @@
     <logo>https://oucdonghang.github.io//images/avatar.png</logo>
     <icon>https://oucdonghang.github.io//favicon.ico</icon>
     <rights>All rights reserved 2020, 这里是董航的！</rights>
+    <entry>
+        <title type="html"><![CDATA[文章阅读笔记5：Design and Implementation of a GaN-Based, 100-kHz, 102-W/in3Single-Phase Inverter]]></title>
+        <id>https://oucdonghang.github.io//post/wen-zhang-yue-du-bi-ji-5design-and-implementation-of-a-gan-based-100-khz-102-win3single-phase-inverter</id>
+        <link href="https://oucdonghang.github.io//post/wen-zhang-yue-du-bi-ji-5design-and-implementation-of-a-gan-based-100-khz-102-win3single-phase-inverter">
+        </link>
+        <updated>2020-02-12T08:20:22.000Z</updated>
+        <content type="html"><![CDATA[<p><img src="https://oucdonghang.github.io//post-images/1581496318578.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1581496322243.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1581496324203.jpg" alt=""></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[文章阅读笔记4：Design and Implementation of a GaN-Based, 100-kHz, 102-W/in3Single-Phase Inverter]]></title>
         <id>https://oucdonghang.github.io//post/wen-zhang-yue-du-bi-ji-4design-and-implementation-of-a-gan-based-100-khz-102-win3single-phase-inverter</id>
@@ -279,259 +290,6 @@ CCM硬开关h桥逆变器的原理图如图4a所示。在固定频率的情况�
 7、因为高频开关的数量在CCM和CRM两种情况下都是相同的。（ 前面提到过）。<br>
 在选定的频率范围内，与器件损耗相比，门极驱动器的功耗要小得多。栅极驱动器损耗、风扇、线频储能无源元件和辅助电路，它们的损耗不会直接影响散热器的体积，被认为是独立于功率级设计的，因此在本分析中被忽略。但是，在确定基本电力阶段时，将考虑这些损失</p>
 <p>在展示设计结果之前，需要注意的是，这些假设必然会导致分析误差，只有在构建和测试初始原型转换器之后，才能量化分析误差。首先，因为一个定制加工的铜散热器是用有限元设计的。通过CFD分析，获得的体积热阻优于工业参考值。因此，在分析中，以散热器体积为主导的预测被高估了。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[英语六级：11-5 ]]></title>
-        <id>https://oucdonghang.github.io//post/ying-yu-liu-ji-11-5</id>
-        <link href="https://oucdonghang.github.io//post/ying-yu-liu-ji-11-5">
-        </link>
-        <updated>2019-11-06T14:40:55.000Z</updated>
-        <content type="html"><![CDATA[<ol>
-<li>1、antagonism    anti  agon   ism     相反的</li>
-<li>2、specific  明确的</li>
-<li>3、beast   凶残的人</li>
-<li>4、Buddist  佛教的人</li>
-<li>5、malpractice    玩忽职守</li>
-<li>6、comic  喜剧</li>
-<li>7、abrupt  突然的，陡峭的</li>
-<li>8、confer   con +fer   共同  fer=  bring带来，拿来 共同拿来，等于授予</li>
-<li>9、marvel  漫威 惊奇漫画   惊奇</li>
-<li>10、cooperate   合作</li>
-<li>11、alienation  挑拨，离间</li>
-<li>12、demonstration    示威、示范、演示</li>
-<li>13、resist   抵抗</li>
-<li>14、fatherly  父亲的</li>
-<li>15、truck   卡车  交易  two men unloaded  the truck</li>
-<li>16、headline   头条</li>
-<li>17、winery  酿酒厂</li>
-<li>18、modernization   现代化</li>
-<li>19、humidity  湿度  潮湿</li>
-<li>20、notwith standing  虽然尽管</li>
-<li>21、planetary   行星的</li>
-<li>22、post 桩</li>
-<li>23、relaxation 放松</li>
-<li>24、propositon  命题，建议主张</li>
-<li>25、donate 捐赠</li>
-<li>26、railway  铁路</li>
-<li>parliamentry  国会</li>
-<li>relativity  相对性，相对论</li>
-<li>depiction   描述</li>
-<li>restriction    限制  约束</li>
-<li>stainless  不容易生锈的，不会脏的</li>
-<li>ace   一流的</li>
-<li><strong>retaliate   报复</strong></li>
-<li>deeply  深深的</li>
-<li>autobiographic   自传的</li>
-<li>hazy   模糊</li>
-<li>abundant  丰富的</li>
-<li>jolly   愉快的，开心的</li>
-<li>thick  厚的</li>
-<li>monster   怪物</li>
-<li>granted  授予  的确，假定</li>
-<li>pupil    小学生</li>
-<li>arouse   叫醒</li>
-<li>stabilise    稳定</li>
-<li>grope  摸索搜索。g  哥哥顺着rope 绳子 摸索着了</li>
-<li>unprecedented     没有先例的、</li>
-<li>prison  监狱</li>
-<li>authorization    授权，批准</li>
-<li>frank  坦率的</li>
-<li>bowl  碗</li>
-<li>negotiation   谈判  （读起来很像红警里面的俄语，，像是谈判）</li>
-<li>colon    冒号</li>
-<li>tremble     发抖</li>
-<li>descendant    下降的。后裔</li>
-<li>investment  投资</li>
-<li>device  设备</li>
-<li>council      理事会</li>
-<li>hearing     听力</li>
-<li>ragged破旧的</li>
-<li>historian    历史学家</li>
-<li>housework   家务</li>
-<li>in   在里面</li>
-<li>laughter  笑声</li>
-<li>web    网络</li>
-<li>biography   传记</li>
-<li>northwestern    西北方</li>
-<li>oil     油   倒油</li>
-<li>outgoing  外向的</li>
-<li>percent   百分比</li>
-<li>poem 诗</li>
-<li>production    产量</li>
-<li>relationship  关系</li>
-<li>shyness   害羞</li>
-<li>so  所以</li>
-<li>bug     错误，漏洞</li>
-<li>drunk   酗酒</li>
-<li>ensure     确保  sure    en sure  一定要确认，就是确保</li>
-<li>eqully  平等的</li>
-<li>everybody   每个人</li>
-<li>loophole   抢眼</li>
-<li>brew  酿造</li>
-<li>evident  明显的  evidance   证据</li>
-<li>criticism    批判</li>
-<li>expansive   膨胀的</li>
-<li>perpetuate  使持续</li>
-<li>exhibition   展览</li>
-<li>outlet   出口</li>
-<li>constitution    con  共同  stitut   set  up  place  建立    共同建立就是制定，制定的时候制定宪法</li>
-<li>juvenile    幼稚的</li>
-<li>wipe  抹布擦  wife  wipe  wipe</li>
-<li>reel  卷 ，蹒跚，打卷。。喝了rio之后步履蹒跚</li>
-<li>prosecution  起诉 检举</li>
-<li>raid   袭击</li>
-<li>atop     放在上面</li>
-<li>alternation    轮流交替</li>
-<li>smuggle    走私</li>
-<li>excel  表格，胜于，优于</li>
-<li>inherit   继承</li>
-<li><strong>creditable   值得赞扬的</strong></li>
-<li></li>
-</ol>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[英语六级：11-1 ]]></title>
-        <id>https://oucdonghang.github.io//post/ying-yu-liu-ji-11-1</id>
-        <link href="https://oucdonghang.github.io//post/ying-yu-liu-ji-11-1">
-        </link>
-        <updated>2019-11-01T15:03:25.000Z</updated>
-        <content type="html"><![CDATA[<p>1、canteen     can 吞 食堂<br>
-2、crab     The crab is  a great delicacy<br>
-3、censorship     cens判断 or  人 判断人的人 审查官审查<br>
-4、claim   要求声称<br>
-5、crouch    crouching tiger ，hidden dragon   卧虎藏龙<br>
-6、elsewhere   在别处   he lives elsewhere during summer<br>
-7、buffet    不菲的自助餐<br>
-8、granted    授予   允许承认<br>
-9、fellowship    to award a fellowship  伙伴关系<br>
-10、graphic   please help me to make a graphic<br>
-11、halfway   路的一半，，，就是半路<br>
-12、authorization 授权<br>
-13、income My monthly income was 200 pounds<br>
-14、predominate  pre 先  dominate 领地 提前有领地的。占主导地位<br>
-15、prosecution    Tom has brought a prosecution against<br>
-16、raid   a raid on a bank<br>
-17、reel   喝了rio 腿就卷在一起了。脚就蹒跚了<br>
-18、represent  re一再的 present表现<br>
-19、descendant     descending下降的，，就是下一代<br>
-20、thriller     惊险小说（死人了嘛）<br>
-21、tremble     注意 tremble代表的是因为寒冷害怕等产生的颤抖。<br>
-22、surgical   sur  gical     surgical operation  外科手术<br>
-23、utilization    utilized 被利用的。。利用<br>
-24、mature  nature  自然  it’s a mature plan<br>
-25、creditable     学分信誉<br>
-26、</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[英语六级：10-28 英语单词]]></title>
-        <id>https://oucdonghang.github.io//post/ying-yu-liu-ji-10-28-ying-yu-dan-ci</id>
-        <link href="https://oucdonghang.github.io//post/ying-yu-liu-ji-10-28-ying-yu-dan-ci">
-        </link>
-        <updated>2019-10-28T11:26:32.000Z</updated>
-        <content type="html"><![CDATA[<p>1、autonomous    Tibet is  an autonomous region of China<br>
-2、proposition    pro  +  position    优先放置的是--<br>
-3、glamour               格莱美瓷砖让家里充满 --<br>
-4、wipe             wife    用  wipe   wipe了桌子<br>
-5、truck<br>
-6、winery       wine酒  winery<br>
-7、smuggle    走私 芒果   struggle努力争斗挣扎<br>
-8、outlet     out 到其他国家<br>
-9、dome   圆屋顶  穹顶   home   家<br>
-10、brew   在winery  brew  wine<br>
-11、dryer   dry有一个干燥的意思<br>
-12、monster<br>
-13、endowment    she has an  endowment of singing<br>
-14、bowl<br>
-15、evident   evident 和evidence    一个是明显的  一个是证据。证据都是明显的<br>
-16、modernization    modern  modernize v   modernization<br>
-17、grandparent<br>
-18、loophole     loop和hole都有圆圈的意思。<br>
-19、hurrycane    hurry +Came            来的很急的风<br>
-20、marvel      漫威<br>
-21、impression   impress<br>
-22、juvenile   juven=young<br>
-23、inch  英寸   最近看论文里的   w/in3  这个单位就是瓦特每立方英寸<br>
-24、frank  为啥百度图片出来的全是大嘴猴  我也不知道为啥这个意思跟大嘴猴有关系<br>
-25、index  数学里经常用到指数函数<br>
-26、planetary     planet    plant  种植行星<br>
-27、indicator    indicase   wait  until the indicator lights up<br>
-28、cariticism  批评  critic  批评家  crisis  危机<br>
-29、laser  镭射<br>
-30、atop    at+top<br>
-31、learner     learn  +er<br>
-32、parliamentary    parliament<br>
-33、maintain  main+tain<br>
-34、council  看守（谐音）   --是个需要看守的地方<br>
-35、monumental  i have a monumental gold medal<br>
-36、malpractice   mal  +practice   mal（坏的）<br>
-37、onward    on +ward    反义词 backward<br>
-38、beast     breast  摸别人breast的都是beast<br>
-39、outline  概括+纲要<br>
-40、depiction depict describe<br>
-41、overt   over +t  出来，over结束之后全部出来<br>
-42、deeply  deep<br>
-43、philosophy  非啰嗦非   非得啰嗦，就是哲学，哲学都很啰嗦<br>
-44、relaxation      relax<br>
-45、popularity    popular   population<br>
-46、negotiation  The contract is still under negotiation<br>
-47、 portion  port<br>
-48、contain  con共同 tain  拿、维持  包含<br>
-49、processor   process 有加工处理的意思     processor加工处理的人或者机器<br>
-50、creditable   credit   You have get a very creditable grade in school this year<br>
-51、pyramid  批了米的pyramid sale 是传销的意思？what？跟金字塔有啥关系。<img src="https://oucdonghang.github.io//post-images/1572265530640.png" alt=""><br>
-52、autobiographic   auto  +biographic<br>
-53、refinery       re +finery 把东西重新变得更好<br>
-54、prison    person<br>
-55、reminiscent    remi+ni+scent   remenber  你的 scent 气味。怀旧的。<br>
-56、perpetuate   per +pet  至始至终的per  pet引申为宠物在后面追<br>
-57、resist    persist/insist     re是反过来的意思，re词根回、反、折回<br>
-58、abundant    abandon<br>
-59、revenue   revenue and expenditure are balance<br>
-60、inherit he intended that his son should inherit his business。<br>
-61、specialty      special +ty    特别的，特殊的。有特点的，专业的 specialist 专家<br>
-62、specifically   specia   fically    i told you specifically not to do that<br>
-63、train    在rain中的train上train<br>
-64、valuable   value  价值、值<br>
-65、warpping    warp    warpping paper<br>
-66、grope   grope for an answer<br>
-67、retaliate   re taliate    找回场子  报复<br>
-68、Buddist    菩提+ist（人）   菩提的人自然是佛教的人<br>
-69、abrupt    That young man has an abrupt manner<br>
-70、alternation   alternative    the alternation of day and night<br>
-71、comic  comedy<br>
-72、confer  i must confer with my lawyer before i decide    confer power<br>
-73、cooperate    co  operate  一起合作<br>
-74、demonstration    demon 魔鬼  strat  示威示范<br>
-75、donate   to  donate  blood 献血<br>
-76、excel    excel很好用，优于其他表格办公软件<br>
-77、exhibition    an exhibition of painting<br>
-78、expansive   expensive   expand+sive    expand 使膨胀、注意区别<br>
-79、fatherly<br>
-80、headline     head+line 头上的条  头条、大标题的<br>
-81、restriction   re   +strict  再严格的。非常限制<br>
-82、railway    rail铁轨  way 有铁轨的路，铁路<br>
-83、jolly   joy<br>
-84、humidity   The humidity is relatively low<br>
-85、hazy 黑贼看不清，所以是模糊的<br>
-86、pupil   pu  pil  小学生幼稚的玩  pu  pil  瞳孔很欢乐<br>
-87、relativity  relate  相对的<br>
-88、stainless  stain（玷污）less  没有被玷污，，不会生锈的<br>
-89、ace      ace一流的高手不会露face<br>
-90、notwithstanding   not +with +standing   虽然，尽管<br>
-91、post    they post  the ship as missing   发布 讲什么放在，柱子上张贴，都是宣布的意思<br>
-92、colon  ：<br>
-93、authorization    author  把作者权限给某人 就是给他授权、<br>
-94、unprecedneted    precede  先于  un没有先于他的就是空前的，史无前例的<br>
-95、arouse   a+rouse 一个肉丝就把他叫起来了<br>
-96、alienation    alien  外星人外星人离间人类。挑拨<br>
-97、investment   invest  投资 attract  foreign investment吸引外国人投资<br>
-98、antagonism    anti   agon  ism     反对、挣扎这种性质成为对抗、对立<br>
-99、ragged   run sb ragged   跑的破破烂烂的，，筋疲力尽<br>
-100、thick    thin  chick小鸡长了thick的羽毛，所以他不怕sick</p>
-<p>101、decendant</p>
 ]]></content>
     </entry>
 </feed>
