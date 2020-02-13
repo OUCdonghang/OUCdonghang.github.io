@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://oucdonghang.github.io/</id>
     <title>这里是董航的！</title>
-    <updated>2020-02-12T08:34:39.410Z</updated>
+    <updated>2020-02-13T03:14:38.810Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://oucdonghang.github.io/"/>
     <link rel="self" href="https://oucdonghang.github.io//atom.xml"/>
@@ -10,6 +10,19 @@
     <logo>https://oucdonghang.github.io//images/avatar.png</logo>
     <icon>https://oucdonghang.github.io//favicon.ico</icon>
     <rights>All rights reserved 2020, 这里是董航的！</rights>
+    <entry>
+        <title type="html"><![CDATA[Fundamentals of power electronics 1-1]]></title>
+        <id>https://oucdonghang.github.io//post/fundamentals-of-power-electronics-1-1</id>
+        <link href="https://oucdonghang.github.io//post/fundamentals-of-power-electronics-1-1">
+        </link>
+        <updated>2020-02-13T03:11:37.000Z</updated>
+        <content type="html"><![CDATA[<p><img src="https://oucdonghang.github.io//post-images/1581563576920.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1581563580283.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1581563581819.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1581563583755.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1581563587099.jpg" alt=""></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[文章阅读笔记5：Design and Implementation of a GaN-Based, 100-kHz, 102-W/in3Single-Phase Inverter]]></title>
         <id>https://oucdonghang.github.io//post/wen-zhang-yue-du-bi-ji-5design-and-implementation-of-a-gan-based-100-khz-102-win3single-phase-inverter</id>
