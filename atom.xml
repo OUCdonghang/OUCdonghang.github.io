@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://oucdonghang.github.io/</id>
     <title>这里是董航的！</title>
-    <updated>2020-02-13T03:14:38.810Z</updated>
+    <updated>2020-02-15T02:29:32.671Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://oucdonghang.github.io/"/>
     <link rel="self" href="https://oucdonghang.github.io//atom.xml"/>
@@ -10,6 +10,21 @@
     <logo>https://oucdonghang.github.io//images/avatar.png</logo>
     <icon>https://oucdonghang.github.io//favicon.ico</icon>
     <rights>All rights reserved 2020, 这里是董航的！</rights>
+    <entry>
+        <title type="html"><![CDATA[Fundamentals of power electronics 2]]></title>
+        <id>https://oucdonghang.github.io//post/fundamentals-of-power-electronics-2</id>
+        <link href="https://oucdonghang.github.io//post/fundamentals-of-power-electronics-2">
+        </link>
+        <updated>2020-02-15T02:25:38.000Z</updated>
+        <content type="html"><![CDATA[<p><img src="https://oucdonghang.github.io//post-images/1581733565089.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1581733568651.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1581733571025.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1581733572427.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1581733574010.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1581733634227.png" alt=""><br>
+这个图里刚开始输出电压是0，电流上升斜率大于下降斜率，上升量大于下降量，所以电流抬高，电流抬高会导致电压抬高。电压抬高会导致电流斜率变化，当上升量等于下降量，即一个周期内前后电流不变时，开始周期变化，</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Fundamentals of power electronics 1-1]]></title>
         <id>https://oucdonghang.github.io//post/fundamentals-of-power-electronics-1-1</id>
