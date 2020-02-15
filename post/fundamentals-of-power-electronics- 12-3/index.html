@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>文章阅读笔记4：Design and Implementation of a GaN-Based, 100-kHz, 102-W/in3Single-Phase Inverter | 这里是董航的！</title>
+<title>Fundamentals of power electronics 2-3 | 这里是董航的！</title>
 <meta name="description" content="这里有董航同学的存货">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -98,21 +98,36 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">文章阅读笔记4：Design and Implementation of a GaN-Based, 100-kHz, 102-W/in3Single-Phase Inverter</h2>
-            <div class="post-date">2020-02-10</div>
+            <h2 class="post-title">Fundamentals of power electronics 2-3</h2>
+            <div class="post-date">2020-02-15</div>
             
             <div class="post-content">
-              <p><img src="https://oucdonghang.github.io//post-images/1581325100365.jpg" alt=""><br>
-<img src="https://oucdonghang.github.io//post-images/1581325117909.jpg" alt=""><br>
-<img src="https://oucdonghang.github.io//post-images/1581325119756.jpg" alt=""><br>
-<img src="https://oucdonghang.github.io//post-images/1581325125236.jpg" alt=""></p>
+              <p><img src="https://oucdonghang.github.io//post-images/1581754741248.png" alt=""><br>
+上面是单刀双掷开关，下面是MOSFET。用一个电压源作驱动，来通断<br>
+D1这个二极管限制了电流方向<br>
+<img src="https://oucdonghang.github.io//post-images/1581755267183.png" alt=""><br>
+当MOSFET导通时，电感电压等于输入电压。电容电压等于输出电压，电流等于输出电压除以负载电阻<br>
+<img src="https://oucdonghang.github.io//post-images/1581755390395.png" alt=""></p>
+<p><img src="https://oucdonghang.github.io//post-images/1581755700212.png" alt=""><br>
+这里区域加起来是0是由于电感的安秒平衡，在上一节的BUCK里讲了。所以得到输入电压和输出电压的关系。<br>
+<img src="https://oucdonghang.github.io//post-images/1581755841163.png" alt=""><br>
+电感电压的大小决定了电流的斜率。<br>
+<img src="https://oucdonghang.github.io//post-images/1581755926556.png" alt=""><br>
+MD就是输出电压比输入电压。而在上面求得了输出电压和输入电压的关系，便很容易得到这张图。<br>
+对于求L<br>
+<img src="https://oucdonghang.github.io//post-images/1581756270929.png" alt=""></p>
+<p><img src="https://oucdonghang.github.io//post-images/1581756028301.png" alt=""><br>
+再看电容的分析<br>
+<img src="https://oucdonghang.github.io//post-images/1581756150213.png" alt=""><br>
+同理则可以根据纹波来求C<br>
+<img src="https://oucdonghang.github.io//post-images/1581756355094.png" alt=""></p>
 
             </div>
             
               <div class="tag-container">
                 
-                  <a href="https://oucdonghang.github.io//tag/gKTB9--hp" class="tag">
-                    文章阅读笔记
+                  <a href="https://oucdonghang.github.io//tag/cE7ezxRq2" class="tag">
+                    Fundamentals of power electronics
                   </a>
                 
               </div>
@@ -120,9 +135,9 @@
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://oucdonghang.github.io//post/wen-zhang-yue-du-bi-ji-3 design-and-implementation-of-a-gan-based-100-khz-102-win3single-phase-inverter">
+                <a href="https://oucdonghang.github.io//post/fundamentals-of-power-electronics-2">
                   <h3 class="post-title">
-                    文章阅读笔记3：Design and Implementation of a GaN-Based, 100-kHz, 102-W/in3Single-Phase Inverter
+                    Fundamentals of power electronics 2-1 2-2
                   </h3>
                 </a>
               </div>

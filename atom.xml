@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://oucdonghang.github.io/</id>
     <title>这里是董航的！</title>
-    <updated>2020-02-15T02:45:14.016Z</updated>
+    <updated>2020-02-15T09:04:41.478Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://oucdonghang.github.io/"/>
     <link rel="self" href="https://oucdonghang.github.io//atom.xml"/>
@@ -10,6 +10,33 @@
     <logo>https://oucdonghang.github.io//images/avatar.png</logo>
     <icon>https://oucdonghang.github.io//favicon.ico</icon>
     <rights>All rights reserved 2020, 这里是董航的！</rights>
+    <entry>
+        <title type="html"><![CDATA[Fundamentals of power electronics 2-3]]></title>
+        <id>https://oucdonghang.github.io//post/fundamentals-of-power-electronics- 12-3</id>
+        <link href="https://oucdonghang.github.io//post/fundamentals-of-power-electronics- 12-3">
+        </link>
+        <updated>2020-02-15T08:17:37.000Z</updated>
+        <content type="html"><![CDATA[<p><img src="https://oucdonghang.github.io//post-images/1581754741248.png" alt=""><br>
+上面是单刀双掷开关，下面是MOSFET。用一个电压源作驱动，来通断<br>
+D1这个二极管限制了电流方向<br>
+<img src="https://oucdonghang.github.io//post-images/1581755267183.png" alt=""><br>
+当MOSFET导通时，电感电压等于输入电压。电容电压等于输出电压，电流等于输出电压除以负载电阻<br>
+<img src="https://oucdonghang.github.io//post-images/1581755390395.png" alt=""></p>
+<p><img src="https://oucdonghang.github.io//post-images/1581755700212.png" alt=""><br>
+这里区域加起来是0是由于电感的安秒平衡，在上一节的BUCK里讲了。所以得到输入电压和输出电压的关系。<br>
+<img src="https://oucdonghang.github.io//post-images/1581755841163.png" alt=""><br>
+电感电压的大小决定了电流的斜率。<br>
+<img src="https://oucdonghang.github.io//post-images/1581755926556.png" alt=""><br>
+MD就是输出电压比输入电压。而在上面求得了输出电压和输入电压的关系，便很容易得到这张图。<br>
+对于求L<br>
+<img src="https://oucdonghang.github.io//post-images/1581756270929.png" alt=""></p>
+<p><img src="https://oucdonghang.github.io//post-images/1581756028301.png" alt=""><br>
+再看电容的分析<br>
+<img src="https://oucdonghang.github.io//post-images/1581756150213.png" alt=""><br>
+同理则可以根据纹波来求C<br>
+<img src="https://oucdonghang.github.io//post-images/1581756355094.png" alt=""></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Fundamentals of power electronics 2-1 2-2]]></title>
         <id>https://oucdonghang.github.io//post/fundamentals-of-power-electronics-2</id>
