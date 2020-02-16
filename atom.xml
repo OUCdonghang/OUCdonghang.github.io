@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://oucdonghang.github.io/</id>
     <title>这里是董航的！</title>
-    <updated>2020-02-16T02:39:38.815Z</updated>
+    <updated>2020-02-16T03:03:25.323Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://oucdonghang.github.io/"/>
     <link rel="self" href="https://oucdonghang.github.io//atom.xml"/>
@@ -10,6 +10,28 @@
     <logo>https://oucdonghang.github.io//images/avatar.png</logo>
     <icon>https://oucdonghang.github.io//favicon.ico</icon>
     <rights>All rights reserved 2020, 这里是董航的！</rights>
+    <entry>
+        <title type="html"><![CDATA[Fundamentals of power electronics 3-2]]></title>
+        <id>https://oucdonghang.github.io//post/fundamentals-of-power-electronics-3-22</id>
+        <link href="https://oucdonghang.github.io//post/fundamentals-of-power-electronics-3-22">
+        </link>
+        <updated>2020-02-16T02:40:49.000Z</updated>
+        <content type="html"><![CDATA[<p>包括电感的铜损耗copper loss<br>
+模型可以考虑非理想特性，比如加入电感的铜耗。<br>
+在boost电路中引入这种模型<br>
+<img src="https://oucdonghang.github.io//post-images/1581821045379.png" alt=""><br>
+在这种模型下再分析等效电路。<br>
+<img src="https://oucdonghang.github.io//post-images/1581821336766.png" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1581821403015.png" alt=""><br>
+与之前相比，输入电压多了一块电阻上的电压损耗。<br>
+<img src="https://oucdonghang.github.io//post-images/1581821502957.png" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1581821559771.png" alt=""><br>
+对于电压VL来说，变小了，因为多减掉一个IR。<br>
+然后得到R对M（D）的影响。<br>
+<img src="https://oucdonghang.github.io//post-images/1581821797775.png" alt=""><br>
+也就是说R越大影响越小。那当然就是电感对于直流量的阻碍作用。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Fundamentals of power electronics 3-1]]></title>
         <id>https://oucdonghang.github.io//post/fundamentals-of-power-electronics-3-11</id>

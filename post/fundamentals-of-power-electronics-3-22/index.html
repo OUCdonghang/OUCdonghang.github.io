@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>Fundamentals of power electronics 2-1 2-2 | 这里是董航的！</title>
+<title>Fundamentals of power electronics 3-2 | 这里是董航的！</title>
 <meta name="description" content="这里有董航同学的存货">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -98,45 +98,33 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">Fundamentals of power electronics 2-1 2-2</h2>
-            <div class="post-date">2020-02-15</div>
+            <h2 class="post-title">Fundamentals of power electronics 3-2</h2>
+            <div class="post-date">2020-02-16</div>
             
             <div class="post-content">
-              <p><img src="https://oucdonghang.github.io//post-images/1581733565089.jpg" alt=""><br>
-<img src="https://oucdonghang.github.io//post-images/1581733568651.jpg" alt=""><br>
-<img src="https://oucdonghang.github.io//post-images/1581733571025.jpg" alt=""><br>
-<img src="https://oucdonghang.github.io//post-images/1581733572427.jpg" alt=""><br>
-<img src="https://oucdonghang.github.io//post-images/1581733574010.jpg" alt=""><br>
-<img src="https://oucdonghang.github.io//post-images/1581733634227.png" alt=""><br>
-这个图里刚开始输出电压是0，电流上升斜率大于下降斜率，上升量大于下降量，所以电流抬高，电流抬高会导致电压抬高。电压抬高会导致电流斜率变化，当上升量等于下降量，即一个周期内前后电流不变时，开始周期变化。<br>
-<img src="https://oucdonghang.github.io//post-images/1581733971198.png" alt=""><br>
-对左右求积分。可以得到<br>
-<img src="https://oucdonghang.github.io//post-images/1581733989791.png" alt=""><br>
-对于平衡状态，这个式子应该是等于0的，因为一个周期前后电流不变。<br>
-<img src="https://oucdonghang.github.io//post-images/1581734021791.png" alt=""><br>
-<img src="https://oucdonghang.github.io//post-images/1581734125378.png" alt=""><br>
-所以说电感电压的平均值是0<br>
-<img src="https://oucdonghang.github.io//post-images/1581734312732.png" alt=""><br>
-计算一个周期电感电压的变化，在平衡态时为0即可得到输出电压的值</p>
-<p><img src="https://oucdonghang.github.io//post-images/1581734621844.png" alt=""><br>
-对于电容的电流，一样可以推导出，从开始到平衡的变化。以及在平衡态，其平均电流为0</p>
+              <p>包括电感的铜损耗copper loss<br>
+模型可以考虑非理想特性，比如加入电感的铜耗。<br>
+在boost电路中引入这种模型<br>
+<img src="https://oucdonghang.github.io//post-images/1581821045379.png" alt=""><br>
+在这种模型下再分析等效电路。<br>
+<img src="https://oucdonghang.github.io//post-images/1581821336766.png" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1581821403015.png" alt=""><br>
+与之前相比，输入电压多了一块电阻上的电压损耗。<br>
+<img src="https://oucdonghang.github.io//post-images/1581821502957.png" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1581821559771.png" alt=""><br>
+对于电压VL来说，变小了，因为多减掉一个IR。<br>
+然后得到R对M（D）的影响。<br>
+<img src="https://oucdonghang.github.io//post-images/1581821797775.png" alt=""><br>
+也就是说R越大影响越小。那当然就是电感对于直流量的阻碍作用。</p>
 
             </div>
-            
-              <div class="tag-container">
-                
-                  <a href="https://oucdonghang.github.io//tag/cE7ezxRq2" class="tag">
-                    Fundamentals of power electronics
-                  </a>
-                
-              </div>
             
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://oucdonghang.github.io//post/fundamentals-of-power-electronics-1-1">
+                <a href="https://oucdonghang.github.io//post/fundamentals-of-power-electronics-3-11">
                   <h3 class="post-title">
-                    Fundamentals of power electronics 1-1 1-2 1-3
+                    Fundamentals of power electronics 3-1
                   </h3>
                 </a>
               </div>
