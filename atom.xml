@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://oucdonghang.github.io/</id>
     <title>这里是董航的！</title>
-    <updated>2020-02-15T09:04:41.478Z</updated>
+    <updated>2020-02-16T02:39:38.815Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://oucdonghang.github.io/"/>
     <link rel="self" href="https://oucdonghang.github.io//atom.xml"/>
@@ -10,6 +10,35 @@
     <logo>https://oucdonghang.github.io//images/avatar.png</logo>
     <icon>https://oucdonghang.github.io//favicon.ico</icon>
     <rights>All rights reserved 2020, 这里是董航的！</rights>
+    <entry>
+        <title type="html"><![CDATA[Fundamentals of power electronics 3-1]]></title>
+        <id>https://oucdonghang.github.io//post/fundamentals-of-power-electronics-3-11</id>
+        <link href="https://oucdonghang.github.io//post/fundamentals-of-power-electronics-3-11">
+        </link>
+        <updated>2020-02-16T01:56:33.000Z</updated>
+        <content type="html"><![CDATA[<p><img src="https://oucdonghang.github.io//post-images/1581818209249.png" alt=""><br>
+理想条件下，输入功率等于输出功率，这种条件下没有损耗。但是一旦有了电容电感这种储能器件，那就会造成损耗，导致输出功率不等于输入功率。<br>
+由功率相等就可以得到<br>
+<img src="https://oucdonghang.github.io//post-images/1581818624391.png" alt=""><br>
+这三个等式。当然，根据这个等式我们可以画出等效电路。<br>
+<img src="https://oucdonghang.github.io//post-images/1581818695046.png" alt=""><br>
+分别等效成电流源和电压源。<br>
+这个也相当于是输入和输出之间有一个变压器。<br>
+<img src="https://oucdonghang.github.io//post-images/1581818898122.png" alt=""></p>
+<p>这样就建立了dc-dc变换的模型<br>
+1、无功率损耗，效率是100%<br>
+2、转化率 M<br>
+3、可控的duty  D<br>
+<img src="https://oucdonghang.github.io//post-images/1581819619067.png" alt=""><br>
+输入可以认为是输入是一个电压源及其内阻，输出有一个负载电阻。<br>
+可以画出变压器两端的等效电路，电压比等于1：M，电阻比等于电压比的平方。所以有了第二个电路图。这时候可以根据电阻分压，求得R上的电压，即输出电压。用到的知识如下。</p>
+<p>变压器传递等效：<br>
+<img src="https://oucdonghang.github.io//post-images/1581820008083.png" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1581820154087.png" alt=""><br>
+例题：<br>
+<img src="https://oucdonghang.github.io//post-images/1581820433444.png" alt=""></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Fundamentals of power electronics 2-3]]></title>
         <id>https://oucdonghang.github.io//post/fundamentals-of-power-electronics- 12-3</id>
