@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>Fundamentals of power electronics | 这里是董航的！</title>
+<title>Python开发-发票识别1 | 这里是董航的！</title>
 <meta name="description" content="这里有董航同学的存货">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -13,6 +13,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://oucdonghang.github.io//styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -91,58 +97,38 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="current-tag">标签: Fundamentals of power electronics</h2>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://oucdonghang.github.io//post/fundamentals-of-power-electronics- 12-3">
-                  <h2 class="post-title">Fundamentals of power electronics 2-3</h2>
-                </a>
-                <div class="post-date">
-                  2020-02-15
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://oucdonghang.github.io//post/fundamentals-of-power-electronics-2">
-                  <h2 class="post-title">Fundamentals of power electronics 2-1 2-2</h2>
-                </a>
-                <div class="post-date">
-                  2020-02-15
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://oucdonghang.github.io//post/fundamentals-of-power-electronics-1-1">
-                  <h2 class="post-title">Fundamentals of power electronics 1-1 1-2 1-3</h2>
-                </a>
-                <div class="post-date">
-                  2020-02-13
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
+          <div class="post-detail">
+            <h2 class="post-title">Python开发-发票识别1</h2>
+            <div class="post-date">2020-02-17</div>
+            
+            <div class="post-content">
+              <p>鉴于上学期中报账过程中需要手动把发票信息输入到系统中，一张两张还好，一次报好多工作量就有点大，并且很机械，一上午就耗进去了。甚至有的时候要算出每一项加税后的单价，所以有了这个想法。做一个发票和清单识别，只需要发票和清单照片，然后把发票导入，就可以导出信息到Excel里，再把excel导入系统就好了。<br>
+最开始想用MATLAB里的图像处理，像识别车牌那样。但是我发现发票上的信息太多太小了，二值化再膨胀、滤波完了，啥都没了。恰巧在网上又找到了tesseract这个库，打算用这个现成的库，把发票要识别的部分分割成一块块的，单独识别。<br>
+可惜，识别时文字部分还是错误率较高，后期打算专门自己训练一个文本库，把发票上的用的文字识别出来即可。</p>
+<p>进度：<br>
+现在已经可以识别一行的发票，大部分信息准确。并且已经成功导出数据到EXCEL里。</p>
 
-          <div class="pagination-container">
-  
-  
-</div>
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://oucdonghang.github.io//tag/Xsky77OGu" class="tag">
+                    Python开发-发票识别
+                  </a>
+                
+              </div>
+            
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
 
         </div>
       </div>
@@ -164,6 +150,29 @@ var app = new Vue({
 })
 
 </script>
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '809bcb370e7402d22c3b',
+        clientSecret: 'ce10b8983d1d5d78bebc529348a8bf94b09bf8b4',
+        repo: 'OUCdonghang.github.io',
+        owner: 'OUCdonghang',
+        admin: ['OUCdonghang'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
