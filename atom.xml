@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://oucdonghang.github.io/</id>
     <title>这里是董航的！</title>
-    <updated>2020-02-19T01:14:18.424Z</updated>
+    <updated>2020-02-20T07:42:11.693Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://oucdonghang.github.io/"/>
     <link rel="self" href="https://oucdonghang.github.io//atom.xml"/>
@@ -10,6 +10,35 @@
     <logo>https://oucdonghang.github.io//images/avatar.png</logo>
     <icon>https://oucdonghang.github.io//favicon.ico</icon>
     <rights>All rights reserved 2020, 这里是董航的！</rights>
+    <entry>
+        <title type="html"><![CDATA[Fundamentals of power electronics 4-1 4-2 4-3]]></title>
+        <id>https://oucdonghang.github.io//post/fundamentals-of-power-electronics-4-1-4-2-4-33</id>
+        <link href="https://oucdonghang.github.io//post/fundamentals-of-power-electronics-4-1-4-2-4-33">
+        </link>
+        <updated>2020-02-20T07:40:50.000Z</updated>
+        <content type="html"><![CDATA[<p><img src="https://oucdonghang.github.io//post-images/1582184470252.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1582184473946.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1582184477473.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1582184482303.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1582184488842.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1582184492449.jpg" alt=""></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fundamentals of power electronics 3-4 3-5 3-6]]></title>
+        <id>https://oucdonghang.github.io//post/fundamentals-of-power-electronics-3-4-3-5-3-6</id>
+        <link href="https://oucdonghang.github.io//post/fundamentals-of-power-electronics-3-4-3-5-3-6">
+        </link>
+        <updated>2020-02-19T03:06:51.000Z</updated>
+        <content type="html"><![CDATA[<p><img src="https://oucdonghang.github.io//post-images/1582081662803.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1582081666120.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1582081669488.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1582081671950.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1582081674188.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1582081677111.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1582081679277.jpg" alt=""></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Fundamentals of power electronics 3-2]]></title>
         <id>https://oucdonghang.github.io//post/fundamentals-of-power-electronics-3-22</id>
@@ -235,178 +264,6 @@ CM电感应大于3.8 mH，以限制rms泄漏电流为50 mA，开关频率为100 
 <p>第七章 结论<br>
 本文设计并实现了一种基于gan的高功率密度逆变器。在保持外壳温度低于60°C的情况下，实现了功率密度为102 W/in3、CEC效率为96.9%的2 kv样机。</p>
 <p>通过实验室实验，研究了现有的增强型GaN器件的导通和开关特性，并将所得数据作为功率级和储能器件比较和热设计的依据。虽然可以采用其他技术进一步提高功率密度，但由于结构简单、控制策略简单、热性能好、鲁棒性强，因此采用了直流陷波滤波器和硬开关全桥变换器设计。该逆变器在电力电子变换器的高功率密度高温设计中具有重要的应用潜力。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[文章阅读笔记2：Design and Implementation of a GaN-Based, 100-kHz, 102-W/in3Single-Phase Inverter]]></title>
-        <id>https://oucdonghang.github.io//post/wen-zhang-yue-du-bi-ji-3design-and-implementation-of-a-gan-based-100-khz-102-win3single-phase-inverter</id>
-        <link href="https://oucdonghang.github.io//post/wen-zhang-yue-du-bi-ji-3design-and-implementation-of-a-gan-based-100-khz-102-win3single-phase-inverter">
-        </link>
-        <updated>2020-02-02T06:44:16.000Z</updated>
-        <content type="html"><![CDATA[<p>对于恒频率的CCM操作，总损耗（开关损耗+传导损耗）是在全功率情况下的一个线路周期的平均值，和开关频率呈线性关系。图5和图6给出了几种候选设计的体积分解，其中EMI滤波器同时涉及共模(CM)和差模(DM)滤波器。<br>
-<img src="https://oucdonghang.github.io//post-images/1581322256878.png" alt=""><br>
-<img src="https://oucdonghang.github.io//post-images/1581322242895.png" alt=""><br>
-由于纹波很小，无源元件产生的功率损耗很小，因此对散热器的体积贡献很小。（意思应该就是无源元件不需要多余的散热器件，所以不会额外增加体积）<br>
-当开关频率从100 kHz增加到500 kHz时，额外的开关损耗会导致散热器体积的增加，从而抵消电感体积的减少。<br>
-<img src="https://oucdonghang.github.io//post-images/1580626608205.png" alt=""><br>
-Passive Related Heatsink：被动相关散热片<br>
-Device Related Heatsink：设备相关散热片<br>
-Inductor：电感<br>
-Capacitor：电容<br>
-EMI：电磁干扰</p>
-<p>在CRM中，尽管在考虑的频率范围内增加了均方根电流(rms)，但软交换操作可以降低设备损耗。然而，增加的核心和铜损耗电感导致整体散热器的体积增加。请注意，CRM操作中的频率是指其在不同范围内的最小频率，其上限分别为900 kHz、1.2 MHz和1.5 MHz。</p>
-<p>图7给出了CEC效率随着功率增加的曲线。包括半导体和电感损耗，并对剩余损耗机制进行了额外的经验估计。一般而言，CCM的功率级控制简单，辅助电路少，效率高<br>
-虽然CRM可能是高功率密度的一个很好的候选。但是电感器的设计和优化，增加控制和传感电路这件事的复杂性，可变开关频率，以及在轻负载下的改进，这些都被认为是繁重的工作，对短时间内的小盒竞争没有足够的好处。所以选用了这个GaN的H桥来作为参赛方案。<br>
-（意思就是这个方案可能是一个很好的有潜力的方案，但是对于参加这个比赛来说，需要做的工作太多了，对于迫切参加这个比赛来说不太适合）</p>
-<p>EMI滤波器相关知识：http://www.elecfans.com/d/691500.html<br>
-CM：共模 DM：差模<br>
-在CCM中，尽管双极调制比单极调制具有更低的漏电流和CM噪声，但DM滤波器的尺寸比CM滤波器大。因此，CM滤波器尺寸的任何减少都会导致DM滤波器尺寸的增加，以适应更高的差分开关纹波。双极调制具有更高的开关损耗，导致更大的热管理系统。因此，选择<strong>单极连续调制与较大的CM滤波器</strong>，以适应泄漏电流和CM噪声限制。<br>
-在进一步的设计迭代中，分析了整个范围的开关频率，团队选择100 kHz作为体积、效率、热性能和EMI产生之间的良好平衡的频率。</p>
-<p>100KHz，单极连续调制和CM滤波器。<br>
-这个选择是特别为了Tennessee大学队伍不应该认为是一个通用方案。随着电感器设计和散热器性能的进一步改进，软开关方案可能会在本设计中超越CCM调制</p>
-<p><strong>C part</strong>  改进的设备损耗模型<br>
-前一节根据室温下DPT测量结果分析了传导损耗和开关损耗。利用最小的散热片来提高功率密度，设备的温度将显著提高。对于氮化镓器件，温度升高将同时改变Rds(ON)和开关特性，如下图所示。测试数据和手册数据进行了对比，在高温下，测量的传导损耗略大于数据表中列出的标称值。<br>
-<img src="https://oucdonghang.github.io//post-images/1580628484070.png" alt=""></p>
-<p>单个GaN器件的导通损耗计算为<br>
-<img src="https://oucdonghang.github.io//post-images/1580628739006.png" alt=""><br>
-其中Irm可以通过仿真得到，Rds(ON)由栅电压和工作温度决定。在不同温度下对GaN器件进行了测试，得到了通电能量损耗与结温之间的关系。<br>
-DPTs实验显示，eono值会随着结温的升高而升高，当逆变器满负荷运行时，至少会增加15%的eono相关开关损耗。然而，EOFF要小得多，不会导致温度损失的显著变化。所以当温度升高时图二的Eoff的曲线仍然有效。<br>
-<img src="https://oucdonghang.github.io//post-images/1580629077158.png" alt=""></p>
-<p>平均开关损耗为：<img src="https://oucdonghang.github.io//post-images/1580629235131.png" alt=""><br>
-Ts是线路周期fsw是开关频率。eon和EOFFare是按实验确定的温度系数进行比例变换的基于测量的操作点。</p>
-<p>第三个附加损耗是所选器件的反向导通损耗，它决定了器件在开关死区时间内的导通损耗。反向导通电压降与温度的关系如图10所示，并有温度变化曲线。这种特性将导致更多的损失，并在细化的损失模型中被考虑<br>
-<img src="https://oucdonghang.github.io//post-images/1580629479579.png" alt=""><br>
-反向传导损耗由：<img src="https://oucdonghang.github.io//post-images/1580629510505.png" alt=""><br>
-tdt是指交换的死区时间<br>
-与前一节使用的简化损耗模型相比，传导损耗可增加60%。在满载时，当设备温度升至100℃时，开关损耗增加15%-20%。在这个改进的模型中，2千瓦CCM h桥结构的额外反向传导损耗也贡献了3w。此改进的损失模型的主要目标包括以下内容：<br>
-1、为热有限元分析(FEA)仿真提供准确的损耗模型，避免外壳上的热点<br>
-2、获得所需散热器的实际体积，并评估和选择CCM操作的适当开关频率<br>
-3、留出足够的设计余量，以避免设备超出其温度限制。</p>
-<p>本节就是更加精细的分析了损耗模型。因为上一节的模型太过简易，很多细节没有考虑，所以在这详细分析，以便于为后面的工作提供帮助。</p>
-<p><strong>第三章：功率解耦。</strong><br>
-<strong>Apart</strong> 无源解耦<br>
-单相逆变器的应用要求功率解耦，因为单相电路的瞬时输出功率是时变的。功率解耦可以是有源的，也可以是无源的。无源解耦是利用滤波来消除纹波，而有源解耦则是使用最少的无源器件的电力电子系统来达到解耦的要求。电源解耦需求将根据应用程序的不同而有所不同。例如，照明应用程序有一个纹波需求，它与灯中可容忍的100或120赫兹闪烁量有关。而PV应用程序通常指定与开始影响最大功率点跟踪(MPPT)的纹波量相关的纹波需求。<br>
-纹波要求公式（适用于25%-100%的满载和Ipeak-Peak&lt;250mA）<br>
-<img src="https://oucdonghang.github.io//post-images/1580630347041.png" alt=""><br>
-对于PV应用，Kjaer等人的[30]表明，峰值电压纹波需要低于MPPT电压的8.5%才能达到98%的利用率.因此，本设计的电压纹波要求完全满足光伏应用的要求。</p>
-<p>无源解耦最常用的方法是使用大容量直流链路电容器。仅使用电容器，满足(4)和(5)所需的电容量可近似为<br>
-<img src="https://oucdonghang.github.io//post-images/1580630591935.png" alt=""><br>
-线性负载条件下|Zin|=Rin=10Ω。pf是从逆变器输出端看到的功率因数。f是基础频率（60Hz） △I是在双频时，电流纹波的峰值百分比在这里是0.1  忽略直流环节电容的等效串联电阻(ESR) 如果分析中包含了电容器的ESR，则所需的直流链路电容为<br>
-<img src="https://oucdonghang.github.io//post-images/1580631169209.png" alt=""><br>
-电解电容,这是最常见的电容器类型用于单相解耦,电容器的时间常数与ESR的电容器,电容范围或50 - 150μs。这个时间常数表明，在实际应用中，在对电容器进行双线频率衰减时，ESR可以忽略不计。(7)与(8)的差值约为2%，在120hz下的耗散系数为0.2。需要注意的是(7)和(8)只使用纹波电流来确定直流链路电容，因为纹波电流和电压之间的关系是由(近)理想电压源和10Ω输入电阻建立的。满足电流纹波要求可以确保满足电压纹波要求，但反之则不行。</p>
-<p>pf应该是逆变器输出端的功率因数，其中包括电磁干扰滤波器的影响。EMI滤波器的X电容将进一步降低超前负载条件下的功率因数，增加直流链路所需的电容量以满足纹波要求。满足在0.7-1领先功率因数负载下的纹波要求，图11显示了使用2-kVA变换器基座时，在100%和20%负载水平下，EMI X电容的直流母线电容与变化百分比。</p>
-<p>应该指出的是，变压器可以连接之间的输出逆变器和负载，如在LBC。这将稍微降低图11所示的要求，因为变压器的磁化电流是滞后的。另外，在假设高功率密度设计时，电感较小的情况下，忽略了电磁干扰滤波器差分电感的影响。<br>
-<img src="https://oucdonghang.github.io//post-images/1580631778802.png" alt=""><br>
-图11中的第一点对应无X电容，逆变器端子外的功率因数与负载的功率因数相同。从图中可以看出，在低功率因数下，X电容的大小对轻载条件下的直流纹波有很大的影响，在设计直流滤波器时需要考虑</p>
-<p><strong>Bpart</strong> 无源共振解耦<br>
-假设独立逆变器在线性负载下运行，在输入端口出现的唯一低频纹波是双频(120hz)项。在这种情况下，对双频项进行滤波的一种更有效的方法是使用调谐到120hz的谐振陷波滤波器，如图12所示。陷波滤波允许非常高的衰减在谐振频率和方便实现与减少电容器的大小。<br>
-该滤波技术也适用于电网频率处输出电流调节带宽高、谐波导致逆变器输入端口接近理想状态的电网应用120 - hz电流源，特别是比例+谐振控制器用于电网频率或重复控制的谐波时。这种方法的效用是有限的，在应用多谐波存在于未经过滤的输入电流，例如，当非线性负载存在。<br>
-假设在理想的谐振条件下，电感的核心损耗相对于绕组损耗较小，陷波滤波器的衰减成为电容的ESR、电感绕组电阻和源阻抗的函数。对于LBC，输入阻抗非常大，因此使用这种方法可以实现高衰减。图13为不同电平下陷波滤波器支路的等效阻抗<br>
-满足(4)和(5)中纹波要求的X个电容器。<br>
-在假设所有的120赫兹纹波都流入直流滤波器的情况下，可以计算出直流滤波器的最坏情况纹波电流。<br>
-<img src="https://oucdonghang.github.io//post-images/1580632652459.png" alt=""></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[文章阅读笔记1：Design and Implementation of a GaN-Based, 100-kHz, 102-W/in3Single-Phase Inverter]]></title>
-        <id>https://oucdonghang.github.io//post/wen-zhang-yue-du-bi-ji-design-and-implementation-of-a-gan-based-100-khz-102-win3single-phase-inverter</id>
-        <link href="https://oucdonghang.github.io//post/wen-zhang-yue-du-bi-ji-design-and-implementation-of-a-gan-based-100-khz-102-win3single-phase-inverter">
-        </link>
-        <updated>2020-02-01T01:39:04.000Z</updated>
-        <content type="html"><![CDATA[<p>摘要：<br>
-Inverter 逆变器  直流变交流的设备  整流是把交流变直流<br>
-电力电子器件的很关键的令人满意的特性就是高功率密度 High power density<br>
-高功率密度可以推动工业应用，让工业应用获得更多利润<br>
-这篇文章是针对这个比赛the Google Little Box Challenge设计的一个基于Ga-N材料的逆变器。功率密度可以达到<img src="https://oucdonghang.github.io//post-images/1580521473779.png" alt="">瓦每立方英寸</p>
-<p>1、研究了多种SiC和GaN材料的增强型场效应管的静态和动态温变特性<br>
-<strong>疑问</strong> 什么随着温度变化？电压电流？模电里的？<br>
-2、根据器件测试结果，比较了逆变器级（inverter stage）的几种拓扑结构和不同的功率解耦方案对器件体积、效率和热要求的影响。此外，本文还讨论了磁性器件（magnetic devices）的一些设计方法和GaN器件的栅极驱动器（gate drives for GaN devices）的实现，使系统能够紧凑有效率。<br>
-<strong>疑问</strong> 拓扑结构是啥意思。外围电路？磁性器件是啥  GaN门极驱动器。还有inverter stage和power stage怎么划分的。<img src="https://oucdonghang.github.io//post-images/1580539537833.png" alt=""><br>
-power stage 应该是传递功率的电路部分<br>
-3、设计了一个直流陷波滤波器（a dc notch filter）和一个硬开关全桥变换器（a hard switching full-bridge converter）。<br>
-陷波滤波器指的是一种可以在某一个频率点迅速衰减输入信号，以达到阻碍此频率信号通过的滤波效果。陷波滤波器属于带阻滤波器的一种,只是他的阻带非常狭窄，它的阶数必须是二阶（含二阶）以上。</p>
-<p>第一章 introduction<br>
-WBG  new wideband gap 高频宽的电力设备具有独特的物理特性 让能量转换有更高的开关频率，更高的效率和更高的能量密度<br>
-为了推动这方面发展，谷歌公司举行了一个比赛LBC   Little Box Challenge<br>
-这个表是一些比赛要求<br>
-<img src="https://oucdonghang.github.io//post-images/1580523435103.png" alt=""><br>
-不仅需要电力电子电路设计，还需要系统的热设计，以避免热点的外壳表面和机械设计，以充分利用封闭的体积。<br>
-这篇文章应该是参赛者的参赛文章</p>
-<p>直流链路上的全桥变换器和电解电容器是用于分布式发电(如光伏发电和燃料电池)的千瓦级单相接口的常用解决方案<br>
-<strong>注</strong>:分布式发电（Distributed Generation，DG），通常是指发电功率在几千瓦至数百兆瓦（也有的建议限制在30～50兆瓦以下）的小型模块化、分散式、<strong>布置在用户附近的</strong>高效、可靠的发电单元。功率密度为1 W/cm3 (16.4 W/in3)是下一代光伏组件集成变流器商业化产品的目标.，本文设计的竟然可以在102w/in3</p>
-<p>并网应用中通常采用直流/直流级的高频变压器或网侧的线频变压器，限制了功率密度，降低了效率<br>
-问：为什么会影响效率 变压器的铜耗和铁耗 是因为采用了变压器，变压器自身会有损耗。所以降低了整个的效率<br>
-https://wenwen.sogou.com/z/q773804217.htm<br>
-<strong>注</strong>：光伏发电并网就是太阳能组件产生的直流电经过并网逆变器转换成符合市电电网要求的交流电之后直接接入公共电网。可以分为带蓄电池的和不带蓄电池的并网发电系统。<br>
-https://news.solarbe.com/201712/26/122431.html</p>
-<p>消除了电流隔离的没有变压器的设计已经被用来实现更紧凑的设计。【5-7】和【14】这一些文章详细说明了单项逆变器的拓扑结构、功率解耦方法和泄漏电流抑制方法。<br>
-所以有了本文的设计。</p>
-<p>在逆变器的功率级（power stage），提高开关频率是实现高功率密度的一种常用方法，因为更高的开关频率往往会导致滤波无源器件和储能器件的尺寸减小。然而，在增加功率密度的同时，更高的开关频率也可能降低转换效率（因为同时也增加了开关损耗），需要额外的设计工作来满足效率和温度要求，或者在包括冷却系统的情况下导致功率密度的净下降。</p>
-<p><strong>所以说开关频率不能无限提高，要在有收益的范围内适当提高</strong>。<br>
-Soft switching techniques 软开关技术 能够提高开关频率同时降低开关损耗<br>
-<img src="https://oucdonghang.github.io//post-images/1580539871240.png" alt=""><br>
-但是一样存在缺点，器件开关损耗的降低可能会导致无源器件上的器件导通损耗和交流损耗的增加，并且当考虑固定带宽的特定标准时，器件开关损耗与电磁干扰(EMI)滤波器的尺寸之间存在非单调关系。</p>
-<p>在dc-ac和ac-dc系统中，对某些储能元件的要求来自于线路频率而不是开关频率，因此增加开关频率不会带来明显的好处。<br>
-在直流输入端的大容量电容能量存储能够为解耦直流和交流部分提供了必要的能量<br>
-有源滤波器采用额外的电力电子设备来充分利用无源元件的可用能量存储，从而降低了体积。然而，有源滤波器的效率低于直流电容器，因此降低了系统的效率，产生更多的热量。<br>
-<img src="https://oucdonghang.github.io//post-images/1580540895605.png" alt=""><br>
-本文设计并实验验证了一种2-kVA单相硬开关全桥逆变器，该逆变器采用了GaN系统的顶冷增强模态GaN器件和谐振直流滤波器，功率密度为102 W/in3。</p>
-<p>第二章 功率级设计</p>
-<p><strong>A</strong>part</p>
-<p>几种商用的WBG（高频宽）设备满足&gt;450V和&gt;12A的额定电压电流要求。假设二级逆变器拓扑，选取了三种分离元件每一种都能满足设计规范。通过实验测量，对这些器件的动态和静态特性进行了表征对比。</p>
-<p><strong>开关损耗</strong><br>
-为了交换能量，使用了双脉冲测试（a double-pulse test    DPT）<br>
-400V下和室温下测量Eon和Eoff。结果如图2所示<br>
-<img src="https://oucdonghang.github.io//post-images/1580542378588.png" alt=""><br>
-这个结果可以直接用于硬开关操作的开关损耗估计<br>
-switching loss 开关损耗<br>
-Load current 负载电流<br>
-<img src="https://oucdonghang.github.io//post-images/1581318464183.png" alt=""><br>
-<img src="https://oucdonghang.github.io//post-images/1581318932246.png" alt=""><br>
-三个器件的比较在表二<br>
-<img src="https://oucdonghang.github.io//post-images/1580542668644.png" alt=""><br>
-软开关Eoss从Coss的数据表中算出并减去Eoff，用剩下的来评估开关损耗。<br>
-http://m.elecfans.com/article/958830.html<br>
-<strong>封装</strong><br>
-另一个需要考虑的因素是可用的器件封装，对开关和热性能有影响。尤其是<br>
-高功率密度原型中的快速开关器件。<br>
-尽管TO-220和TO-247两个封装简化了热设计，但附加的寄生现象可能导致开关损耗增加500%<br>
-TO-220:<br>
-<img src="https://oucdonghang.github.io//post-images/1580543504666.png" alt=""><br>
-TO-227：<br>
-<img src="https://oucdonghang.github.io//post-images/1580543552986.png" alt=""><br>
-尽管当考虑了寄生现象时，SMD封装是更好的。但通常会导致底部冷却封装的热性能下降，因为热必须通过PCB传递<br>
-SMD：就是贴片类的封装<br>
-当PCB是热通道的一部分时机械体积可能因为位置约束导致一个更大的系统体积。<br>
-SMD的体积更小</p>
-<p>分析表二<br>
-<img src="https://oucdonghang.github.io//post-images/1580544278628.png" alt=""><br>
-传导和开关特性GaN GS66508和SiC C3M0065090J 是相似的。Transphorm公司的共源共栅GaN设备有更好的开关特性但是有更大的导通阻抗Rds。相比于SiC，GaN有更小的封装。特别的GS66508T在三者中是最小的封装和最低的热阻。所以说基于上面的分析，文章之后的比较都是在GaN中进行， 因为GaN确实要更优秀一些。<br>
-图三中的Cree C3M0065090J SiC MOSFEAT也被本文开发和测试了，虽然这不是本文的重点。有了一个样机<br>
-在两种原型的开关频率和调制方案相同，100 khz单极连续正弦脉宽调制的情况下这个样机的性能和GaN的类似，不过由于允许的栅极电压范围很宽，所以更加强力，但是最后的<strong>体积更大</strong>。<br>
-箱容量是30立方英寸，由于散热、风扇和额外电源供15V/-3V电压，接近11立方英存是功率级</p>
-<p><strong>B</strong> part<br>
-研究了高功率密度单相逆变器的几种拓扑结构。多电平逆变器经THD改进具有减少EMI滤波器尺寸的优点。但增加了组件数量和控制复杂性<br>
-THD：谐波失真是指输出信号比输入信号多出的谐波成分,谐波失真是系统不是完全线性造成的.所有附加谐波电平之和称为总谐波失真</p>
-<p>为了低成本、低复杂性、低尺寸实现高功率密度，选择标准h桥作为设计拓扑。<br>
-同时考虑了连续导电方式(CCM)和临界导电方式(CRM)调制方案。<br>
-注：注意补充CCM和CRM</p>
-<p>由于CRM操作中存在的高峰值电流，在CRM调制中也考虑了并行同步或交错相位支路interleaved phase legs。</p>
-<p><img src="https://oucdonghang.github.io//post-images/1580546450162.png" alt=""><br>
-https://blog.csdn.net/zhy295006359/article/details/79054258<br>
-CCM硬开关h桥逆变器的原理图如图4a所示。在固定频率的情况下，两个相位的分支会发生相位转换，滤波器看到的等效输出频率使器件的开关频率加倍。该单相SPWM方案被选为硬开关逆变器的比较方案</p>
-<p>CRM是图4b，工作时有180°的相移，以不同的频率切换实现软切换。第三相支路在线路频率上是互补的。<br>
-与高频相位支路相比，该相位支路的器件损耗相对较小，因此，控制器件损耗的高频开关器件数目与对应的CCM相同<br>
-为了评估候选拓扑结构和调制方案，建立了不同开关频率下CCM和CRM操作的功率密度分析模型，每个包括半导体和被动损耗以及散热器和被动元件的体积。为了以统一的方式进行比较，做了几个假设。<br>
-1、所有的电感器设计都选用了正方体的电磁芯作为参考，采用iGSE方法计算了磁芯损耗，3C90,3F3,3F35和3F40材料的损耗都是使用每种设计的最小损失实现来计算的。类似的高频电感设计方法可以在[25]和[28]中找到。一种改进的差动电感器设计将在第四节中提出。<br>
-2、LC滤波器的截止频率设置为输出开关频率的五分之一，电容体积采用TDK MKP系列产品。<br>
-3、CCM操作选择10%的电感电流纹波<br>
-4、GS66508T和TPH3006都考虑了室温下的开关损耗和传导损耗，并选择两者中较低者作为每个设计的参考。<br>
-5、散热器的大小使器件的结温tj不超过100°C。<br>
-6、使用商业设计工具估算散热器的体积，热阻为多少多少。这个数值是用来作为参考，以近似所需的散热器体积为每个设计。器件和电感的损耗都包括在散热器体积的预算中<br>
-7、因为高频开关的数量在CCM和CRM两种情况下都是相同的。（ 前面提到过）。<br>
-在选定的频率范围内，与器件损耗相比，门极驱动器的功耗要小得多。栅极驱动器损耗、风扇、线频储能无源元件和辅助电路，它们的损耗不会直接影响散热器的体积，被认为是独立于功率级设计的，因此在本分析中被忽略。但是，在确定基本电力阶段时，将考虑这些损失</p>
-<p>在展示设计结果之前，需要注意的是，这些假设必然会导致分析误差，只有在构建和测试初始原型转换器之后，才能量化分析误差。首先，因为一个定制加工的铜散热器是用有限元设计的。通过CFD分析，获得的体积热阻优于工业参考值。因此，在分析中，以散热器体积为主导的预测被高估了。</p>
 ]]></content>
     </entry>
 </feed>
