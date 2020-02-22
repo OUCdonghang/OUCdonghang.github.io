@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://oucdonghang.github.io/</id>
     <title>这里是董航的！</title>
-    <updated>2020-02-22T09:58:27.522Z</updated>
+    <updated>2020-02-22T10:18:30.034Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://oucdonghang.github.io/"/>
     <link rel="self" href="https://oucdonghang.github.io//atom.xml"/>
@@ -68,6 +68,27 @@
 <img src="https://oucdonghang.github.io//post-images/1582081674188.jpg" alt=""><br>
 <img src="https://oucdonghang.github.io//post-images/1582081677111.jpg" alt=""><br>
 <img src="https://oucdonghang.github.io//post-images/1582081679277.jpg" alt=""></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Python开发-发票识别1]]></title>
+        <id>https://oucdonghang.github.io//post/python-kai-fa-fa-piao-shi-bie-12</id>
+        <link href="https://oucdonghang.github.io//post/python-kai-fa-fa-piao-shi-bie-12">
+        </link>
+        <updated>2020-02-17T08:06:54.000Z</updated>
+        <content type="html"><![CDATA[<p>鉴于上学期中报账过程中需要手动把发票信息输入到系统中，一张两张还好，一次报好多工作量就有点大，并且很机械，一上午就耗进去了。甚至有的时候要算出每一项加税后的单价，所以有了这个想法。做一个发票和清单识别，只需要发票和清单照片，然后把发票导入，就可以导出信息到Excel里，再把excel导入系统就好了。而且还有超过一定数额的发票还需要验真，就想着一步到位解决掉</p>
+<p>1、最开始想用MATLAB里的图像处理，像识别车牌那样。但是我发现发票上的信息太多太小了，二值化再膨胀、滤波完了，啥都没了。恰巧在网上又找到了tesseract这个库，打算用这个现成的库，把发票要识别的部分分割成一块块的，单独识别。<br>
+可惜，识别时文字部分还是错误率较高，后期打算专门自己训练一个文本库，把发票上的用的文字识别出来即可。</p>
+<p>2、后来偶然在百度AI里找到了发票图片识别的API，我感觉发现了新大陆，识别的准确率很高，每天有500次免费调用权限。对于处理报账问题来说完全够用。已经基本实现识别加存储到PDF中。但是还是存在问题，如果货物名称比较长，可能识别成好几行，而且数字有时候正负会识别错误。</p>
+<p>3、正在我找不到方法解决第二个的问题的时候想去先写发票验真，突然发现验真之后的数据里有正确的所有数据。。那不就直接验真就好了，就可以导出数据导PDF里。<br>
+验真搜到了两种解决方案。<br>
+【1】Python+request，模拟浏览器访问国税局网站，然后下载js文件生成的验证码，识别验证码，用post请求发票验真数据。<br>
+【2】Python+selenium ，用代码打开浏览器自动填写要求的发票代码等等，然后定位验证码下载图片，识别验证码，提交查验，得到验真结果，打印pdf。</p>
+<p>【2】的优点是能得到pdf，【1】可能也可以，但是我还不会。<br>
+现在两个方法最严重的障碍是验证码识别的识别率太低了。我用了好几种方法，一个是直接用的阿里云的一个API，纯英文和数字还行。碰到中文就拉闸。<br>
+第二个是用网上开源的一个识别库，不太了解怎么实现的，这个高很多，但是碰到中文依然不太行。<br>
+第三个也是没办法的办法，自己训练一个库把。用tesseract-OCR识别，训练库真是一个枯燥的过程，我爬了大概100张验证码，明天练一练把。。<br>
+<img src="https://oucdonghang.github.io//post-images/1582366645959.png" alt=""></p>
 ]]></content>
     </entry>
     <entry>
@@ -185,17 +206,6 @@ MD就是输出电压比输入电压。而在上面求得了输出电压和输入
 <img src="https://oucdonghang.github.io//post-images/1581563581819.jpg" alt=""><br>
 <img src="https://oucdonghang.github.io//post-images/1581563583755.jpg" alt=""><br>
 <img src="https://oucdonghang.github.io//post-images/1581563587099.jpg" alt=""></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[文章阅读笔记5：Design and Implementation of a GaN-Based, 100-kHz, 102-W/in3Single-Phase Inverter]]></title>
-        <id>https://oucdonghang.github.io//post/wen-zhang-yue-du-bi-ji-5design-and-implementation-of-a-gan-based-100-khz-102-win3single-phase-inverter</id>
-        <link href="https://oucdonghang.github.io//post/wen-zhang-yue-du-bi-ji-5design-and-implementation-of-a-gan-based-100-khz-102-win3single-phase-inverter">
-        </link>
-        <updated>2020-02-12T08:20:22.000Z</updated>
-        <content type="html"><![CDATA[<p><img src="https://oucdonghang.github.io//post-images/1581496318578.jpg" alt=""><br>
-<img src="https://oucdonghang.github.io//post-images/1581496322243.jpg" alt=""><br>
-<img src="https://oucdonghang.github.io//post-images/1581496324203.jpg" alt=""></p>
 ]]></content>
     </entry>
 </feed>
