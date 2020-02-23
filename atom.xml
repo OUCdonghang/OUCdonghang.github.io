@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://oucdonghang.github.io/</id>
     <title>这里是董航的！</title>
-    <updated>2020-02-22T10:18:30.034Z</updated>
+    <updated>2020-02-23T11:05:48.024Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://oucdonghang.github.io/"/>
     <link rel="self" href="https://oucdonghang.github.io//atom.xml"/>
@@ -10,6 +10,21 @@
     <logo>https://oucdonghang.github.io//images/avatar.png</logo>
     <icon>https://oucdonghang.github.io//favicon.ico</icon>
     <rights>All rights reserved 2020, 这里是董航的！</rights>
+    <entry>
+        <title type="html"><![CDATA[Fundamentals of power electronics 4-10 4-11 4-12]]></title>
+        <id>https://oucdonghang.github.io//post/fundamentals-of-power-electronics-4-10-4-11-4-112</id>
+        <link href="https://oucdonghang.github.io//post/fundamentals-of-power-electronics-4-10-4-11-4-112">
+        </link>
+        <updated>2020-02-23T11:04:35.000Z</updated>
+        <content type="html"><![CDATA[<p><img src="https://oucdonghang.github.io//post-images/1582455903541.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1582455912437.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1582455914892.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1582455917266.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1582455919199.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1582455921229.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1582455922775.jpg" alt=""></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Fundamentals of power electronics 4-7 4-8 4-9]]></title>
         <id>https://oucdonghang.github.io//post/fundamentals-of-power-electronics-4-7-4-8-4-99</id>
@@ -193,19 +208,6 @@ MD就是输出电压比输入电压。而在上面求得了输出电压和输入
 计算一个周期电感电压的变化，在平衡态时为0即可得到输出电压的值</p>
 <p><img src="https://oucdonghang.github.io//post-images/1581734621844.png" alt=""><br>
 对于电容的电流，一样可以推导出，从开始到平衡的变化。以及在平衡态，其平均电流为0</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fundamentals of power electronics 1-1 1-2 1-3]]></title>
-        <id>https://oucdonghang.github.io//post/fundamentals-of-power-electronics-1-1</id>
-        <link href="https://oucdonghang.github.io//post/fundamentals-of-power-electronics-1-1">
-        </link>
-        <updated>2020-02-13T03:11:37.000Z</updated>
-        <content type="html"><![CDATA[<p><img src="https://oucdonghang.github.io//post-images/1581563576920.jpg" alt=""><br>
-<img src="https://oucdonghang.github.io//post-images/1581563580283.jpg" alt=""><br>
-<img src="https://oucdonghang.github.io//post-images/1581563581819.jpg" alt=""><br>
-<img src="https://oucdonghang.github.io//post-images/1581563583755.jpg" alt=""><br>
-<img src="https://oucdonghang.github.io//post-images/1581563587099.jpg" alt=""></p>
 ]]></content>
     </entry>
 </feed>
