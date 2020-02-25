@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://oucdonghang.github.io/</id>
     <title>这里是董航的！</title>
-    <updated>2020-02-23T11:05:48.024Z</updated>
+    <updated>2020-02-25T14:15:33.584Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://oucdonghang.github.io/"/>
     <link rel="self" href="https://oucdonghang.github.io//atom.xml"/>
@@ -10,6 +10,23 @@
     <logo>https://oucdonghang.github.io//images/avatar.png</logo>
     <icon>https://oucdonghang.github.io//favicon.ico</icon>
     <rights>All rights reserved 2020, 这里是董航的！</rights>
+    <entry>
+        <title type="html"><![CDATA[Fundamentals of power electronics 5-1 5-2 5-3]]></title>
+        <id>https://oucdonghang.github.io//post/fundamentals-of-power-electronics-5-1-5-2-5-33</id>
+        <link href="https://oucdonghang.github.io//post/fundamentals-of-power-electronics-5-1-5-2-5-33">
+        </link>
+        <updated>2020-02-25T08:30:06.000Z</updated>
+        <content type="html"><![CDATA[<p><img src="https://oucdonghang.github.io//post-images/1582619624348.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1582619627180.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1582619630555.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1582619633887.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1582619635804.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1582619637608.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1582619639489.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1582619641263.jpg" alt=""><br>
+<img src="https://oucdonghang.github.io//post-images/1582619643121.jpg" alt=""></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Fundamentals of power electronics 4-10 4-11 4-12]]></title>
         <id>https://oucdonghang.github.io//post/fundamentals-of-power-electronics-4-10-4-11-4-112</id>
@@ -182,32 +199,6 @@ MD就是输出电压比输入电压。而在上面求得了输出电压和输入
 <img src="https://oucdonghang.github.io//post-images/1581756150213.png" alt=""><br>
 同理则可以根据纹波来求C<br>
 <img src="https://oucdonghang.github.io//post-images/1581756355094.png" alt=""></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fundamentals of power electronics 2-1 2-2]]></title>
-        <id>https://oucdonghang.github.io//post/fundamentals-of-power-electronics-2</id>
-        <link href="https://oucdonghang.github.io//post/fundamentals-of-power-electronics-2">
-        </link>
-        <updated>2020-02-15T02:25:38.000Z</updated>
-        <content type="html"><![CDATA[<p><img src="https://oucdonghang.github.io//post-images/1581733565089.jpg" alt=""><br>
-<img src="https://oucdonghang.github.io//post-images/1581733568651.jpg" alt=""><br>
-<img src="https://oucdonghang.github.io//post-images/1581733571025.jpg" alt=""><br>
-<img src="https://oucdonghang.github.io//post-images/1581733572427.jpg" alt=""><br>
-<img src="https://oucdonghang.github.io//post-images/1581733574010.jpg" alt=""><br>
-<img src="https://oucdonghang.github.io//post-images/1581733634227.png" alt=""><br>
-这个图里刚开始输出电压是0，电流上升斜率大于下降斜率，上升量大于下降量，所以电流抬高，电流抬高会导致电压抬高。电压抬高会导致电流斜率变化，当上升量等于下降量，即一个周期内前后电流不变时，开始周期变化。<br>
-<img src="https://oucdonghang.github.io//post-images/1581733971198.png" alt=""><br>
-对左右求积分。可以得到<br>
-<img src="https://oucdonghang.github.io//post-images/1581733989791.png" alt=""><br>
-对于平衡状态，这个式子应该是等于0的，因为一个周期前后电流不变。<br>
-<img src="https://oucdonghang.github.io//post-images/1581734021791.png" alt=""><br>
-<img src="https://oucdonghang.github.io//post-images/1581734125378.png" alt=""><br>
-所以说电感电压的平均值是0<br>
-<img src="https://oucdonghang.github.io//post-images/1581734312732.png" alt=""><br>
-计算一个周期电感电压的变化，在平衡态时为0即可得到输出电压的值</p>
-<p><img src="https://oucdonghang.github.io//post-images/1581734621844.png" alt=""><br>
-对于电容的电流，一样可以推导出，从开始到平衡的变化。以及在平衡态，其平均电流为0</p>
 ]]></content>
     </entry>
 </feed>
